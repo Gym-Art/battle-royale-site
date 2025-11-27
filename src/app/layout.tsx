@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     default: `${siteConfig.name} | ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
   }, 
-  description: 'The first professional gymnastics league. Mixed teams, normalized scoring, $25,000 prize pool. Battle Royal transforms gymnastics into a modern spectator sport.',
-  keywords: ['gymnastics', 'competition', 'professional sports', 'Battle Royal', 'Gym Art', 'WAG', 'MAG'],
+  description: 'The first professional gymnastics league. Mixed teams, normalized scoring, $25,000 prize pool. Battle Royale transforms gymnastics into a modern spectator sport.',
+  keywords: ['gymnastics', 'competition', 'professional sports', 'Battle Royale', 'Gym Art', 'WAG', 'MAG'],
   authors: [{ name: 'Gym Art Inc.' }],
   openGraph: {
     type: 'website',

@@ -20,13 +20,13 @@ export const Header: React.FC = () => {
           >
             <Image
               src="/logo.svg"
-              alt="Battle Royal"
+              alt="Battle Royale"
               width={40}
               height={40}
               className="transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]"
             />
             <span className="font-display text-xl text-neon-green tracking-widest hover-glow-green">
-              BATTLE ROYAL
+              BATTLE ROYALE
             </span>
           </TrackedLink>
 

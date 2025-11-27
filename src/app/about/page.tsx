@@ -15,29 +15,6 @@ export default function AboutPage() {
     trackEvent({ name: 'page_view', meta: { title: 'About' } });
   }, []);
 
-  const team = [
-    {
-      name: 'Benjamin Astorga',
-      role: 'CEO & Lead Developer',
-      bio: 'Mexican National Team gymnast. BA Mathematics (Honours). Full-stack engineer who built the entire Gym Art platform used across Canada & US.',
-    },
-    {
-      name: 'Julia Savenok',
-      role: 'COO & Meet Director',
-      bio: '5+ years directing gymnastics meets & clubs. 10 years competitive MAG coach. Operational lead for events with 600+ athletes.',
-    },
-    {
-      name: 'Félix Blaquière',
-      role: 'CFO & Backend Developer',
-      bio: 'Finance background. Former Canadian National Team gymnast. Backend & infrastructure developer for Gym Art\'s scoring ecosystem.',
-    },
-    {
-      name: 'Jamal Davis',
-      role: 'Social Media Manager',
-      bio: 'Scaled multiple brands to tens of thousands of followers. Expert in engagement strategy and performance-driven content.',
-    },
-  ];
-
   return (
     <PageLayout>
       {/* Hero */}
@@ -47,7 +24,7 @@ export default function AboutPage() {
         
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
-            <p className="text-neon-magenta uppercase tracking-[0.3em] text-sm mb-4 font-display">About Battle Royal</p>
+            <p className="text-neon-magenta uppercase tracking-[0.3em] text-sm mb-4 font-display">About Battle Royale</p>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-text-primary mb-6 tracking-wider">
               OUR <span className="text-neon-green text-glow-green">STORY</span>
             </h1>
@@ -80,7 +57,7 @@ export default function AboutPage() {
                 sport they love.
               </p>
               <p className="text-neon-green font-semibold text-xl text-glow-green">
-                Battle Royal changes that.
+                Battle Royale changes that.
               </p>
               <p>
                 We&apos;re building a professional, repeatable competition league designed for spectators 
@@ -136,7 +113,7 @@ export default function AboutPage() {
             </h2>
             
             <p className="text-text-muted mb-6">
-              Battle Royal is produced by <strong className="text-text-primary">Gym Art Inc.</strong>, 
+              Battle Royale is produced by <strong className="text-text-primary">Gym Art Inc.</strong>, 
               the company behind Gym Art Meets—an end-to-end platform for gymnastics competition 
               management including registration, scheduling, scoring, and media.
             </p>
@@ -154,27 +131,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid opacity-10" />
-        
-        <div className="section-container relative z-10">
-          <h2 className="font-display text-4xl text-text-primary mb-8 text-center tracking-wider">
-            THE <span className="text-neon-pink text-glow-pink">TEAM</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {team.map((member, index) => (
-              <div key={index} className="p-6 bg-surface-card border border-surface-muted hover:border-neon-green transition-all duration-300">
-                <h3 className="font-display text-xl text-text-primary mb-1 tracking-wide">{member.name}</h3>
-                <p className="text-neon-green text-sm uppercase tracking-wider mb-3">{member.role}</p>
-                <p className="text-text-muted text-sm">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Contact */}
       <section className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="section-container relative z-10">
@@ -183,7 +139,7 @@ export default function AboutPage() {
               GET IN <span className="text-neon-green text-glow-green">TOUCH</span>
             </h2>
             <p className="text-text-muted mb-8">
-              Questions about Battle Royal? Want to partner with us? We&apos;d love to hear from you.
+              Questions about Battle Royale? Want to partner with us? We&apos;d love to hear from you.
             </p>
 
             <TrackedLink

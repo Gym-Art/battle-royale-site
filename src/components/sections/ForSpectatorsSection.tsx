@@ -19,7 +19,7 @@ export const ForSpectatorsSection: React.FC = () => {
             
             <div className="space-y-4 text-text-muted">
               <p>
-                Forget 3-day competitions with confusing rotation schedules. Battle Royal is a 
+                Forget 3-day competitions with confusing rotation schedules. Battle Royale is a 
                 single-day spectacle designed for <span className="text-neon-pink">maximum entertainment</span>.
               </p>
               <p>

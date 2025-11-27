@@ -29,7 +29,7 @@ export const EmailSignupSection: React.FC = () => {
           </div>
 
           <p className="text-text-muted/50 text-sm">
-            We respect your inbox. No spam, just important <span className="text-neon-green">Battle Royal</span> updates.
+            We respect your inbox. No spam, just important <span className="text-neon-green">Battle Royale</span> updates.
           </p>
         </div>
       </div>

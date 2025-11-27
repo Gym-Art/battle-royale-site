@@ -26,7 +26,7 @@ export default function RulesPage() {
               FORMAT & <span className="text-neon-pink text-glow-pink">RULES</span>
             </h1>
             <p className="text-xl text-text-muted">
-              Everything you need to know about how Battle Royal works—from team composition 
+              Everything you need to know about how Battle Royale works—from team composition 
               to score normalization.
             </p>
           </div>
@@ -76,7 +76,7 @@ export default function RulesPage() {
               SCORE <span className="text-neon-pink text-glow-pink">NORMALIZATION</span>
             </h2>
             <p className="text-text-muted text-lg mb-8">
-              The breakthrough that makes Battle Royal possible.
+              The breakthrough that makes Battle Royale possible.
             </p>
 
             <div className="p-8 bg-surface-card border border-surface-muted mb-8">
@@ -223,7 +223,7 @@ export default function RulesPage() {
             </div>
             
             <p className="text-center text-text-muted mt-6">
-              Teams finishing 4th–8th receive exclusive <span className="text-neon-green">Battle Royal</span> merchandise.
+              Teams finishing 4th–8th receive exclusive <span className="text-neon-green">Battle Royale</span> merchandise.
             </p>
           </div>
         </div>

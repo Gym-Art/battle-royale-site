@@ -30,7 +30,7 @@ export const HeroSection: React.FC = () => {
         <div className="flex justify-center mb-6">
           <Image
             src="/logo.svg"
-            alt="Battle Royal"
+            alt="Battle Royale"
             width={120}
             height={120}
             className="drop-shadow-[0_0_30px_rgba(57,255,20,0.6)] animate-pulse-glow"

@@ -36,13 +36,13 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3 mb-3">
               <Image
                 src="/logo.svg"
-                alt="Battle Royal"
+                alt="Battle Royale"
                 width={32}
                 height={32}
                 className="drop-shadow-[0_0_8px_rgba(57,255,20,0.6)]"
               />
               <h3 className="font-display text-xl text-neon-green tracking-widest">
-                BATTLE ROYAL
+                BATTLE ROYALE
               </h3>
             </div>
             <p className="text-text-muted text-sm">{siteConfig.tagline}</p>

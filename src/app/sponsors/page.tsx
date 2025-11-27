@@ -1,13 +1,13 @@
 'use client';
 
-import { useEffect } from 'react';
-import { PageLayout } from '@/components/layout/PageLayout';
-import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
-import { TrackedLink } from '@/components/ui/TrackedLink';
-import { Button } from '@/components/ui/Button';
-import { siteConfig } from '@/config/site';
 import { trackEvent } from '@/analytics/analytics';
 import { initSessionAttribution } from '@/analytics/session';
+import { PageLayout } from '@/components/layout/PageLayout';
+import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
+import { Button } from '@/components/ui/Button';
+import { TrackedLink } from '@/components/ui/TrackedLink';
+import { siteConfig } from '@/config/site';
+import { useEffect } from 'react';
 
 export default function SponsorsPage() {
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function SponsorsPage() {
     },
     {
       title: 'Merch & Apparel Partners',
-      description: 'Outfit the competition. Exclusive branding on official Battle Royal merchandise and team apparel.',
+      description: 'Outfit the competition. Exclusive branding on official Battle Royale merchandise and team apparel.',
       highlight: 'High visibility',
       color: 'pink',
     },
@@ -47,7 +47,7 @@ export default function SponsorsPage() {
           <div className="max-w-3xl">
             <p className="text-neon-pink uppercase tracking-[0.3em] text-sm mb-4 font-display">Partnership Opportunities</p>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-text-primary mb-6 tracking-wider">
-              SPONSOR <span className="text-neon-green text-glow-green">BATTLE ROYAL</span>
+              SPONSOR <span className="text-neon-green text-glow-green">BATTLE ROYALE</span>
             </h1>
             <p className="text-xl text-text-muted">
               Partner with the first professional gymnastics league. Reach a passionate, 
@@ -88,7 +88,7 @@ export default function SponsorsPage() {
             <p className="text-lg text-text-muted">
               <span className="text-neon-green font-semibold">The gap:</span> Gymnastics has massive global interest 
               but no professional ecosystem. No repeatable events. No team culture. No scalable revenue model. 
-              <span className="text-neon-pink"> Battle Royal fills this gap</span> with a spectator-first format designed for growth.
+              <span className="text-neon-pink"> Battle Royale fills this gap</span> with a spectator-first format designed for growth.
             </p>
           </div>
         </div>
@@ -162,22 +162,18 @@ export default function SponsorsPage() {
               LET&apos;S <span className="text-neon-pink text-glow-pink">TALK</span>
             </h2>
             <p className="text-text-muted mb-8">
-              Interested in partnering with Battle Royal? Reach out to discuss how we can 
+              Interested in partnering with Battle Royale? Reach out to discuss how we can 
               create value together.
             </p>
 
-            <div className="p-8 bg-surface-card border border-surface-muted">
-              <p className="text-text-primary font-semibold mb-2 font-display tracking-wide">BENJAMIN ASTORGA</p>
-              <p className="text-text-muted mb-4">CEO, Gym Art Inc.</p>
-              <TrackedLink
-                href={`mailto:${siteConfig.contactEmail}?subject=Battle%20Royal%20Sponsorship%20Inquiry`}
-                eventMeta={{ ctaId: 'sponsor_contact', label: 'Contact Email' }}
-              >
-                <Button variant="primary" size="lg">
-                  {siteConfig.contactEmail}
-                </Button>
-              </TrackedLink>
-            </div>
+            <TrackedLink
+              href={`mailto:${siteConfig.contactEmail}?subject=Battle%20Royale%20Sponsorship%20Inquiry`}
+              eventMeta={{ ctaId: 'sponsor_contact', label: 'Contact Email' }}
+            >
+              <Button variant="primary" size="lg">
+                {siteConfig.contactEmail}
+              </Button>
+            </TrackedLink>
           </div>
         </div>
       </section>

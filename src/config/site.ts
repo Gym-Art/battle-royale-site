@@ -1,4 +1,4 @@
-export type SocialPlatform = 'instagram' | 'tiktok' | 'youtube';
+export type SocialPlatform = 'instagram' | 'tiktok' | 'facebook';
 
 export interface SocialLink {
   platform: SocialPlatform;
@@ -15,14 +15,14 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: 'Battle Royal',
+  name: 'Battle Royale',
   tagline: 'Pro-style gymnastics battles. Live crowd. Real stakes.',
   emailSignupTargetListId: 'br-general-waitlist',
-  contactEmail: 'benjamin.astorga@gymart.org',
+  contactEmail: 'battle.royale@gymart.org',
   socials: [
-    { platform: 'instagram', label: '@battle.royal', url: 'https://instagram.com/battle.royal' },
-    { platform: 'tiktok', label: '@battle.royal', url: 'https://tiktok.com/@battle.royal' },
-    { platform: 'youtube', label: 'Battle Royal', url: 'https://youtube.com/@battleroyalgymnastics' },
+    { platform: 'instagram', label: '@battle.royale', url: 'https://instagram.com/gymart.battle.royale' },
+    { platform: 'tiktok', label: '@battle.royale', url: 'https://tiktok.com/@gymart.battle.royale' },
+    { platform: 'facebook', label: 'Battle Royale', url: 'https://www.facebook.com/profile.php?id=61584420504084' },
   ],
 };
 
