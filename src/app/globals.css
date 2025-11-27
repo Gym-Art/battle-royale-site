@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Orbitron', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+  
+  --neon-green: #5CA05C;
+  --neon-pink: #C87890;
+  --neon-magenta: #A068A0;
+  --neon-purple: #8868A8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-black text-text-primary antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-wider uppercase;
+  }
+
+  ::selection {
+    background: rgba(92, 160, 92, 0.3);
+    color: #fff;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-24;
+  }
+
+  /* Text glow classes - disabled */
+  .text-glow-green,
+  .text-glow-pink,
+  .text-glow-magenta {
+    /* No glow */
+  }
+
+  /* Gradient Text */
+  .text-gradient-neon {
+    @apply bg-gradient-to-r from-neon-green via-neon-pink to-neon-magenta bg-clip-text text-transparent;
+  }
+
+  .text-gradient-green-pink {
+    @apply bg-gradient-to-r from-neon-green to-neon-pink bg-clip-text text-transparent;
+  }
+
+  /* Grid Background Pattern */
+  .bg-grid {
+    background-image: 
+      linear-gradient(rgba(92, 160, 92, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(92, 160, 92, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .bg-grid-dense {
+    background-image: 
+      linear-gradient(rgba(92, 160, 92, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(92, 160, 92, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    background: rgba(15, 15, 20, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .glass-dark {
+    background: rgba(5, 5, 8, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Card styles */
+  .card-neon {
+    @apply bg-surface-card border border-surface-muted;
+    transition: all 0.3s ease;
+  }
+
+  .card-neon:hover {
+    border-color: var(--neon-green);
+  }
+
+  .card-neon-pink:hover {
+    border-color: var(--neon-pink);
+  }
+
+  /* Gradient Backgrounds */
+  .bg-gradient-tokyo {
+    background: linear-gradient(
+      135deg,
+      rgba(5, 5, 8, 1) 0%,
+      rgba(26, 26, 46, 0.8) 50%,
+      rgba(5, 5, 8, 1) 100%
+    );
+  }
+
+  /* Divider Lines */
+  .divider-neon {
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--neon-green) 20%,
+      var(--neon-pink) 80%,
+      transparent 100%
+    );
+  }
+
+  /* Input Focus */
+  .input-neon {
+    @apply bg-surface-dark border border-surface-muted text-text-primary;
+    transition: all 0.3s ease;
+  }
+
+  .input-neon:focus {
+    border-color: var(--neon-green);
+    outline: none;
+  }
+
+  /* Hover utilities - no glow */
+  .hover-glow-green {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow-green:hover {
+    color: var(--neon-green);
+  }
+
+  .hover-glow-pink {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow-pink:hover {
+    color: var(--neon-pink);
+  }
+
+  /* Flicker Animation - disabled */
+  .animate-flicker {
+    /* No animation */
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0F0F14;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1A1A2E;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5CA05C;
+  }
+}
