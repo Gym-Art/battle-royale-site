@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { PageLayout } from '@/components/layout/PageLayout';
-import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { trackEvent } from '@/analytics/analytics';
 import { initSessionAttribution } from '@/analytics/session';
+import { PageLayout } from '@/components/layout/PageLayout';
+import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
+import { useEffect, useState } from 'react';
 
 interface TimelineEvent {
   id: string;
