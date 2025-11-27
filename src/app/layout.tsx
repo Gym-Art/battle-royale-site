@@ -1,8 +1,8 @@
 import { siteConfig } from '@/config/site';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from 'next';
 import { Orbitron, Space_Grotesk } from 'next/font/google';
 import './globals.css';
-
 const orbitron = Orbitron({
   subsets: ['latin'],
   variable: '--font-display',
@@ -43,6 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbitron.variable} ${spaceGrotesk.variable}`}>
       <body className="font-body">{children}</body>
+      <Analytics />
     </html>
   );
 }
