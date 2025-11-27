@@ -131,7 +131,7 @@ export default function AboutPage() {
                 <li>• <strong className="text-text-primary">Direct distribution</strong> to the gymnastics market through existing platform</li>
                 <li>• <strong className="text-text-primary">Proprietary technology</strong> that we can modify without third-party dependencies</li>
                 <li>• <strong className="text-text-primary">Deep industry network</strong> with federations, clubs, and elite athletes</li>
-                <li>• <strong className="text-text-primary">Exclusive exposure</strong> at International Gymnix and major Canadian competitions</li>
+               
               </ul>
             </div>
           </div>
