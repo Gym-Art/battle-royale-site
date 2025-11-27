@@ -60,10 +60,17 @@ export default function AboutPage() {
                 Battle Royale changes that.
               </p>
               <p>
-                We&apos;re building a professional, repeatable competition league designed for spectators 
+                We&apos;re building a professional, repeatable competition series designed for spectators 
                 first. <span className="text-neon-pink">Mixed teams. Normalized scoring. Real cash prizes.</span> A format that casual viewers 
                 can follow and hardcore fans can obsess over.
               </p>
+              <div className="p-6 bg-surface-card border border-neon-green/30 mt-6">
+                <p className="text-text-primary font-semibold mb-2">Year 1: 4 events. $100K in prizes.</p>
+                <p className="text-text-muted text-sm">
+                  Starting November 2026 in Ontario/Quebec, Canada. Our goal is to scale to 
+                  <span className="text-neon-pink"> $250,000 per competition</span>.
+                </p>
+              </div>
             </div>
           </div>
         </div>

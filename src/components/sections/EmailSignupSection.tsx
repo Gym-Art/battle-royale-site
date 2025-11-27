@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
 import { EmailForm } from '@/components/ui/EmailForm';
+import React from 'react';
 
 export const EmailSignupSection: React.FC = () => {
   return (

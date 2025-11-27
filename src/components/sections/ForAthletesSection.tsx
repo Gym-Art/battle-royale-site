@@ -6,12 +6,12 @@ export const ForAthletesSection: React.FC = () => {
   const highlights = [
     {
       title: 'Real Cash Prizes',
-      description: '$15,000 for 1st place. $7,500 for 2nd. $2,500 for 3rd. Runner-ups receive exclusive merch.',
+      description: '$25K per event. $100K total in Year 1. 1st place takes $15K, 2nd $7.5K, 3rd $2.5K.',
       color: 'green',
     },
     {
       title: 'Mixed Teams',
-      description: 'Build your own team of 4+ gymnasts. All women, all men, or any mix—your choice.',
+      description: 'Build your own team of 3+ gymnasts. All women, all men, or any mix—your choice.',
       color: 'pink',
     },
     {
@@ -20,8 +20,8 @@ export const ForAthletesSection: React.FC = () => {
       color: 'green',
     },
     {
-      title: 'One-Day Format',
-      description: 'Qualification → Semi-Final → Final. No multi-day grind. Peak performance, peak stakes.',
+      title: '4 Events Per Year',
+      description: 'Each event is one day: Qualification → Semi-Final → Final. Multiple chances to compete and win.',
       color: 'pink',
     },
   ];

@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { mainNav } from '@/config/nav';
 import { TrackedLink } from '@/components/ui/TrackedLink';
+import { mainNav } from '@/config/nav';
+import Image from 'next/image';
+import React, { useState } from 'react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

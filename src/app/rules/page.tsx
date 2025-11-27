@@ -1,10 +1,10 @@
 'use client';
 
-import { useEffect } from 'react';
-import { PageLayout } from '@/components/layout/PageLayout';
-import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { trackEvent } from '@/analytics/analytics';
 import { initSessionAttribution } from '@/analytics/session';
+import { PageLayout } from '@/components/layout/PageLayout';
+import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
+import { useEffect } from 'react';
 
 export default function RulesPage() {
   useEffect(() => {
@@ -44,11 +44,11 @@ export default function RulesPage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Cash Prize', desc: '$25,000 CAD total prize pool. 1st place: $15,000. 2nd: $7,500. 3rd: $2,500. Teams in 4th–8th receive merch prizes.', color: 'green' },
-              { title: 'Mixed Teams', desc: '64 team spots available. Each team needs at least 4 members with no max size. Teams can be all women, all men, or any mix.', color: 'pink' },
+              { title: 'Cash Prizes', desc: '$25K per event. $100K total in Year 1. 1st: $15K. 2nd: $7.5K. 3rd: $2.5K. Teams 4th–8th get merch prizes.', color: 'green' },
+              { title: 'Mixed Teams', desc: '64 team spots per event. Minimum 3 gymnasts, no max. Teams can be all women, all men, or any mix.', color: 'pink' },
               { title: 'Invitational', desc: 'Open to all gymnasts 16+ who can perform FIG-level routines. No federation restrictions or qualification requirements.', color: 'magenta' },
-              { title: 'Elimination Format', desc: '64 teams qualify, 12 advance to semi-finals, 4 make the finals. Each round features progressively fewer routines with higher stakes.', color: 'green' },
-              { title: 'One-Day Event', desc: 'Four morning qualification rounds, then semi-final and final in the evening. Complete competition in a single day.', color: 'pink' },
+              { title: '4 Events Per Year', desc: 'Year 1 runs Nov 2026 – Jun 2027. Each event is one day: qualification, semi-final, and final.', color: 'green' },
+              { title: 'Elimination Format', desc: '64 teams qualify, 12 advance to semi-finals, 4 make the finals. Progressively fewer routines with higher stakes.', color: 'pink' },
               { title: 'FIG Judging', desc: 'Same routines. Same judging criteria. Same FIG rules. Just normalized scores for fair cross-apparatus comparison.', color: 'magenta' },
             ].map((item, index) => (
               <div key={index} className="p-6 bg-surface-card border border-surface-muted hover:border-neon-green transition-all duration-300">
@@ -225,6 +225,15 @@ export default function RulesPage() {
             <p className="text-center text-text-muted mt-6">
               Teams finishing 4th–8th receive exclusive <span className="text-neon-green">Battle Royale</span> merchandise.
             </p>
+            
+            <div className="mt-8 p-6 bg-surface-muted/30 border border-neon-magenta/30 text-center">
+              <p className="text-text-muted">
+                <span className="text-neon-magenta font-semibold">Year 1:</span> 4 events × $25K = <span className="text-neon-green">$100K total prizes</span>
+              </p>
+              <p className="text-text-muted/70 text-sm mt-2">
+                Our goal: scale to $250K per competition
+              </p>
+            </div>
           </div>
         </div>
       </section>

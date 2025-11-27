@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import { siteConfig } from '@/config/site';
-import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Button } from '@/components/ui/Button';
+import { TrackedLink } from '@/components/ui/TrackedLink';
+import { siteConfig } from '@/config/site';
+import Image from 'next/image';
+import React from 'react';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -51,7 +51,7 @@ export const HeroSection: React.FC = () => {
         
         <p className="text-lg text-text-muted max-w-xl mx-auto mb-10">
           The first professional gymnastics league. Mixed teams. Normalized scoring. 
-          <span className="text-neon-pink"> $25,000 prize pool.</span> One day. One winner.
+          <span className="text-neon-pink"> $100K in Year 1 prizes.</span> 4 events. 4 champions.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -78,15 +78,15 @@ export const HeroSection: React.FC = () => {
         <div className="grid grid-cols-3 gap-8 max-w-lg mx-auto">
           <div className="text-center">
             <p className="font-display text-3xl sm:text-4xl text-neon-green text-glow-green">$25K</p>
-            <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Prize Pool</p>
+            <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Per Event</p>
           </div>
           <div className="text-center">
             <p className="font-display text-3xl sm:text-4xl text-neon-pink text-glow-pink">64</p>
             <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Teams</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-3xl sm:text-4xl text-neon-magenta text-glow-magenta">1</p>
-            <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Day</p>
+            <p className="font-display text-3xl sm:text-4xl text-neon-magenta text-glow-magenta">4</p>
+            <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Events</p>
           </div>
         </div>
       </div>

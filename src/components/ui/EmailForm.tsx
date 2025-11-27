@@ -66,7 +66,7 @@ export const EmailForm: React.FC = () => {
       
       {status === 'success' && (
         <p className="absolute -bottom-8 left-0 text-neon-green text-sm text-glow-green">
-          You're on the list.
+          You&apos;re on the list.
         </p>
       )}
       {status === 'error' && (
