@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
-import { siteConfig } from '@/config/site';
 import { TrackedLink } from '@/components/ui/TrackedLink';
+import { siteConfig } from '@/config/site';
+import Image from 'next/image';
+import React from 'react';
 
 const socialIcons: Record<string, React.ReactNode> = {
   instagram: (
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
         {/* Neon Divider */}
         <div className="divider-neon mb-12" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="flex flex-col items-start">
             <div className="flex items-center gap-3 mb-3">
@@ -46,6 +46,23 @@ export const Footer: React.FC = () => {
               </h3>
             </div>
             <p className="text-text-muted text-sm">{siteConfig.tagline}</p>
+          </div>
+
+          {/* Learn More */}
+          <div>
+            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">GYM ART</h4>
+            <TrackedLink
+              href="https://gymart.org"
+              eventMeta={{ label: 'Learn More Gym Art', ctaId: 'footer_gymart_link' }}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-text-muted hover:text-neon-green hover-glow-green transition-all duration-300 text-sm flex items-center gap-2"
+            >
+              Learn more about Gym Art
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </TrackedLink>
           </div>
 
           {/* Contact */}
