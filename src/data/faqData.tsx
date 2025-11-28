@@ -13,7 +13,7 @@ export interface FAQItem {
 export interface FAQCategory {
   id: string;
   name: string;
-  color: 'green' | 'pink' | 'magenta';
+  color: 'green' | 'pink' | 'yellow';
   items: FAQItem[];
 }
 
@@ -128,8 +128,8 @@ export const getFAQData = (): FAQCategory[] => [
               Teams need a minimum of 3 gymnasts with no maximum size. Teams can be all women, all men, or any mix.
               Gymnasts from different clubs can form teams together—there are no club or federation restrictions.
             </p>
-            <div className="p-3 bg-neon-magenta/10 border border-neon-magenta/30 rounded mt-3">
-              <p className="text-neon-magenta font-display text-sm tracking-wider mb-1">NATIONAL TEAM LIMIT</p>
+            <div className="p-3 bg-neon-yellow/10 border border-neon-yellow/30 rounded mt-3">
+              <p className="text-neon-yellow font-display text-sm tracking-wider mb-1">NATIONAL TEAM LIMIT</p>
               <p className="text-text-secondary">
                 To prevent &quot;super teams&quot; in the early seasons, each team may only include{' '}
                 <span className="text-text-primary font-semibold">one current national team member</span>. This ensures
@@ -153,7 +153,7 @@ export const getFAQData = (): FAQCategory[] => [
             </p>
             <p className="mb-3">Mixed teams can use any combination of these 8 apparatus.</p>
             <div className="p-3 bg-surface-muted/30 border border-surface-muted rounded mt-3">
-              <p className="text-neon-magenta font-display text-sm tracking-wider mb-1">
+              <p className="text-neon-yellow font-display text-sm tracking-wider mb-1">
                 WHY NO POMMEL HORSE OR PARALLEL BARS?
               </p>
               <p className="text-text-secondary">
@@ -211,7 +211,7 @@ export const getFAQData = (): FAQCategory[] => [
             <p className="mb-3">
               Single-day elimination format: <span className="text-neon-green font-semibold">Qualification</span> (9:00
               AM - 3:00 PM, 64 teams, 8 routines each) → <span className="text-neon-pink font-semibold">Semi-Finals</span>{' '}
-              (6:00 PM - 7:30 PM, top 12 teams, 6 routines each) → <span className="text-neon-magenta font-semibold">Finals</span>{' '}
+              (6:00 PM - 7:30 PM, top 12 teams, 6 routines each) → <span className="text-neon-yellow font-semibold">Finals</span>{' '}
               (8:00 PM - 8:30 PM, top 4 teams, 4 routines each). Highest total score wins.
             </p>
             <p className="mb-3 text-text-secondary">
@@ -275,7 +275,7 @@ export const getFAQData = (): FAQCategory[] => [
   {
     id: 'coaches',
     name: 'For Coaches',
-    color: 'magenta',
+    color: 'yellow',
     items: [
       {
         question: 'How do I register my athletes?',
@@ -300,7 +300,7 @@ export const getFAQData = (): FAQCategory[] => [
               </li>
             </ul>
             <p className="mb-3 text-text-secondary">
-              <span className="text-neon-magenta font-semibold">Registration opens:</span> BR 1 (July 2026), BR 2
+              <span className="text-neon-yellow font-semibold">Registration opens:</span> BR 1 (July 2026), BR 2
               (August 2026), BR 3 (November 2026), BR 4 (January 2027)
             </p>
             <TrackedLink
@@ -514,7 +514,7 @@ export const getFAQData = (): FAQCategory[] => [
   {
     id: 'sponsors',
     name: 'For Sponsors',
-    color: 'magenta',
+    color: 'yellow',
     items: [
       {
         question: 'What sponsorship opportunities exist?',
@@ -599,7 +599,7 @@ export const getFAQData = (): FAQCategory[] => [
               </ul>
             </div>
             <div>
-              <p className="text-neon-magenta font-display text-sm tracking-wider mb-2">FINALS (8:00 PM → 8:30 PM)</p>
+              <p className="text-neon-yellow font-display text-sm tracking-wider mb-2">FINALS (8:00 PM → 8:30 PM)</p>
               <ul className="list-disc list-inside space-y-1 text-text-secondary ml-2">
                 <li>
                   The <span className="text-text-primary font-semibold">final 4 teams</span> gather in the middle of the
@@ -659,8 +659,8 @@ export const getFAQData = (): FAQCategory[] => [
                 Then, compare <span className="text-text-primary font-semibold">difficulty scores</span>
               </li>
             </ol>
-            <div className="p-3 bg-neon-magenta/10 border border-neon-magenta/30 rounded">
-              <p className="text-neon-magenta font-display text-sm tracking-wider mb-1">DEATH MATCH</p>
+            <div className="p-3 bg-neon-yellow/10 border border-neon-yellow/30 rounded">
+              <p className="text-neon-yellow font-display text-sm tracking-wider mb-1">DEATH MATCH</p>
               <p className="text-text-secondary">
                 If it&apos;s still a true tie, we go to a <span className="text-text-primary font-semibold">death match</span>
                 : both teams send up <span className="text-text-primary font-semibold">one athlete</span> (or two) to

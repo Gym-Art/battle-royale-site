@@ -6,10 +6,9 @@
   --font-display: 'Orbitron', system-ui, sans-serif;
   --font-body: 'Space Grotesk', system-ui, sans-serif;
   
-  --neon-green: #5CA05C;
-  --neon-pink: #C87890;
-  --neon-magenta: #A068A0;
-  --neon-purple: #8868A8;
+  --neon-green: #ADD0B3;
+  --neon-yellow: #FDFD96;
+  --neon-pink: #FFD1DC;
 }
 
 @layer base {
@@ -26,7 +25,7 @@
   }
 
   ::selection {
-    background: rgba(92, 160, 92, 0.3);
+    background: rgba(173, 208, 179, 0.3);
     color: #fff;
   }
 }
@@ -43,13 +42,13 @@
   /* Text glow classes - disabled */
   .text-glow-green,
   .text-glow-pink,
-  .text-glow-magenta {
+  .text-glow-yellow {
     /* No glow */
   }
 
   /* Gradient Text */
   .text-gradient-neon {
-    @apply bg-gradient-to-r from-neon-green via-neon-pink to-neon-magenta bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-neon-green via-neon-yellow to-neon-pink bg-clip-text text-transparent;
   }
 
   .text-gradient-green-pink {
@@ -59,15 +58,15 @@
   /* Grid Background Pattern */
   .bg-grid {
     background-image: 
-      linear-gradient(rgba(92, 160, 92, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(92, 160, 92, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba(173, 208, 179, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(173, 208, 179, 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
   }
 
   .bg-grid-dense {
     background-image: 
-      linear-gradient(rgba(92, 160, 92, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(92, 160, 92, 0.05) 1px, transparent 1px);
+      linear-gradient(rgba(173, 208, 179, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(173, 208, 179, 0.05) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 
@@ -152,6 +151,15 @@
   .animate-flicker {
     /* No animation */
   }
+
+  /* Apparatus icon filters - convert black SVG to pastel colors */
+  .icon-pink img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2000%) hue-rotate(300deg) brightness(110%) contrast(100%);
+  }
+
+  .icon-green img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2000%) hue-rotate(95deg) brightness(110%) contrast(100%);
+  }
 }
 
 @layer utilities {
@@ -171,6 +179,6 @@
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #5CA05C;
+    background: #ADD0B3;
   }
 }

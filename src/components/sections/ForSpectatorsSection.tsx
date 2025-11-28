@@ -55,8 +55,8 @@ export const ForSpectatorsSection: React.FC = () => {
               </div>
             </div>
 
-            <div className="p-4 bg-neon-magenta/10 border border-neon-magenta/30 text-center">
-              <p className="text-neon-magenta font-display tracking-wide">DATES & VENUES TBD</p>
+            <div className="p-4 bg-neon-yellow/10 border border-neon-yellow/30 text-center">
+              <p className="text-neon-yellow font-display tracking-wide">DATES & VENUES TBD</p>
               <p className="text-text-muted text-sm">First event: November 2026</p>
             </div>
           </div>

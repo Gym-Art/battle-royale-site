@@ -20,11 +20,11 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="section-padding pt-32 bg-gradient-to-b from-surface-black via-surface-dark to-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-20" />
-        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-neon-magenta/10 rounded-full blur-[100px]" />
+        <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-neon-yellow/10 rounded-full blur-[100px]" />
         
         <div className="section-container relative z-10">
           <div className="max-w-3xl">
-            <p className="text-neon-magenta uppercase tracking-[0.3em] text-sm mb-4 font-display">About Battle Royale</p>
+            <p className="text-neon-yellow uppercase tracking-[0.3em] text-sm mb-4 font-display">About Battle Royale</p>
             <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl text-text-primary mb-6 tracking-wider">
               OUR <span className="text-neon-green text-glow-green">STORY</span>
             </h1>
@@ -91,13 +91,13 @@ export default function AboutPage() {
               {[
                 { title: 'Massive Demand', desc: '41.5M Olympic viewers prove the audience exists. Social media has created thousands of visible elite athletes with existing followings.', color: 'green' },
                 { title: 'No Supply', desc: 'There\'s no professional league despite massive demand. Consumers are trained to watch niche sports (UFC, CrossFit, Ninja Warrior).', color: 'pink' },
-                { title: 'We Have Distribution', desc: 'Gym Art Meets software reaches tens of thousands of gymnasts, parents, and coaches. We own the entire competition stack.', color: 'magenta' },
+                { title: 'We Have Distribution', desc: 'Gym Art Meets software reaches tens of thousands of gymnasts, parents, and coaches. We own the entire competition stack.', color: 'yellow' },
                 { title: 'Proven Technology', desc: 'Our platform is stress-tested across International Gymnix and all major Canadian competitions. We can iterate faster than anyone.', color: 'green' },
               ].map((item, index) => (
                 <div key={index} className="p-6 bg-surface-card border border-surface-muted hover:border-neon-green transition-all duration-300">
                   <h3 className={`font-display text-xl mb-3 tracking-wide ${
                     item.color === 'green' ? 'text-neon-green' : 
-                    item.color === 'pink' ? 'text-neon-pink' : 'text-neon-magenta'
+                    item.color === 'pink' ? 'text-neon-pink' : 'text-neon-yellow'
                   }`}>
                     {item.title}
                   </h3>
@@ -116,7 +116,7 @@ export default function AboutPage() {
         <div className="section-container relative z-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-display text-4xl text-text-primary mb-6 tracking-wider">
-              POWERED BY <span className="text-neon-magenta text-glow-magenta">GYM ART</span>
+              POWERED BY <span className="text-neon-yellow text-glow-yellow">GYM ART</span>
             </h2>
             
             <p className="text-text-muted mb-6">

@@ -122,10 +122,10 @@ const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
           
           {/* Competition */}
           <div className="flex items-center gap-4">
-            <div className="w-4 h-4 rounded-full bg-neon-magenta flex-shrink-0 animate-pulse" />
+            <div className="w-4 h-4 rounded-full bg-neon-yellow flex-shrink-0 animate-pulse" />
             <div className="flex-grow flex items-center justify-between">
               <span className="text-text-primary font-semibold">COMPETITION DAY</span>
-              <span className="text-neon-magenta font-display text-lg">{event.competitionDate}</span>
+              <span className="text-neon-yellow font-display text-lg">{event.competitionDate}</span>
             </div>
           </div>
         </div>
@@ -174,14 +174,14 @@ export default function SchedulePage() {
         
         <div className="section-container relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <div className="inline-block px-4 py-2 bg-surface-muted border border-neon-magenta/30 mb-4">
-              <span className="text-neon-magenta font-display tracking-wider text-sm">COMING FIRST</span>
+            <div className="inline-block px-4 py-2 bg-surface-muted border border-neon-yellow/30 mb-4">
+              <span className="text-neon-yellow font-display tracking-wider text-sm">COMING FIRST</span>
             </div>
             <h2 className="font-display text-3xl text-text-primary mb-4 tracking-wider">
               PROOF OF CONCEPT
             </h2>
             <p className="text-text-muted mb-2">
-              <span className="text-neon-magenta font-semibold">June 21, 2026</span>
+              <span className="text-neon-yellow font-semibold">June 21, 2026</span>
             </p>
             <p className="text-text-muted">
               The inaugural showcase event. Limited capacity. First look at what Battle Royale can be.
@@ -294,7 +294,7 @@ export default function SchedulePage() {
                     <p className="font-display text-4xl text-neon-green mb-2">$30</p>
                     <p className="text-text-muted text-sm">Standard seating</p>
                   </div>
-                  <div className="p-6 bg-gradient-to-br from-neon-pink/10 to-neon-magenta/10 border border-neon-pink/30 text-center">
+                  <div className="p-6 bg-gradient-to-br from-neon-pink/10 to-neon-yellow/10 border border-neon-pink/30 text-center">
                     <p className="text-neon-pink text-sm mb-2 font-display tracking-wider">COURTSIDE</p>
                     <p className="font-display text-4xl text-neon-pink mb-2">$150</p>
                     <p className="text-text-muted text-sm">Front-row premium seating</p>
@@ -323,11 +323,11 @@ export default function SchedulePage() {
       {/* Future Vision */}
       <section className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
-        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-neon-magenta/5 rounded-full blur-[100px]" />
+        <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-neon-yellow/5 rounded-full blur-[100px]" />
         
         <div className="section-container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
-            <p className="text-neon-magenta uppercase tracking-[0.3em] text-sm mb-4 font-display">Looking Ahead</p>
+            <p className="text-neon-yellow uppercase tracking-[0.3em] text-sm mb-4 font-display">Looking Ahead</p>
             <h2 className="font-display text-4xl text-text-primary mb-6 tracking-wider">
               THIS IS JUST THE <span className="text-neon-green">BEGINNING</span>
             </h2>

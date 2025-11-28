@@ -3,7 +3,7 @@
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { siteConfig } from '@/config/site';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const socialIcons: Record<string, React.ReactNode> = {
   instagram: (
@@ -24,6 +24,12 @@ const socialIcons: Record<string, React.ReactNode> = {
 };
 
 export const Footer: React.FC = () => {
+  const [currentYear, setCurrentYear] = useState(2026);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-surface-dark border-t border-surface-muted">
       <div className="section-container py-12">
@@ -101,7 +107,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-surface-muted text-center">
           <p className="text-text-muted text-sm">
-            © {new Date().getFullYear()} <span className="text-neon-green">Gym Art Inc.</span> All rights reserved.
+            © {currentYear} <span className="text-neon-green">Gym Art Inc.</span> All rights reserved.
           </p>
         </div>
       </div>

@@ -2,6 +2,7 @@
 
 import { trackEvent } from '@/analytics/analytics';
 import { initSessionAttribution } from '@/analytics/session';
+import { JumpToSection } from '@/components/layout/JumpToSection';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { Button } from '@/components/ui/Button';
@@ -32,7 +33,7 @@ export default function SponsorsPage() {
       title: 'Equipment & Services Partners',
       description: 'Provide equipment, technology, or services. Long-term association with the league infrastructure.',
       highlight: 'Year-round presence',
-      color: 'magenta',
+      color: 'yellow',
     },
   ];
 
@@ -57,8 +58,23 @@ export default function SponsorsPage() {
         </div>
       </section>
 
-      {/* Market Opportunity */}
+      {/* Jump to Section Navigation */}
       <section className="section-padding bg-surface-dark relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid opacity-10" />
+        <div className="section-container relative z-10">
+          <JumpToSection
+            sections={[
+              { id: 'market-opportunity', label: 'Market Opportunity', color: 'green' },
+              { id: 'partnership-tiers', label: 'Partnership Tiers', color: 'pink' },
+              { id: 'what-partners-get', label: 'What Partners Get', color: 'green' },
+              { id: 'contact', label: 'Contact', color: 'yellow' },
+            ]}
+          />
+        </div>
+      </section>
+
+      {/* Market Opportunity */}
+      <section id="market-opportunity" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -77,8 +93,8 @@ export default function SponsorsPage() {
               <p className="text-text-muted">Existing pro leagues</p>
               <p className="text-text-muted/50 text-sm mt-2">No year-round competition</p>
             </div>
-            <div className="p-8 bg-surface-card border border-surface-muted hover:border-neon-magenta transition-all duration-300 text-center">
-              <p className="font-display text-5xl text-neon-magenta text-glow-magenta mb-2">250K+</p>
+            <div className="p-8 bg-surface-card border border-surface-muted hover:border-neon-yellow transition-all duration-300 text-center">
+              <p className="font-display text-5xl text-neon-yellow text-glow-yellow mb-2">250K+</p>
               <p className="text-text-muted">Reachable regional audience</p>
               <p className="text-text-muted/50 text-sm mt-2">Parents, athletes, coaches</p>
             </div>
@@ -95,7 +111,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Partnership Types */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
+      <section id="partnership-tiers" className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -111,7 +127,7 @@ export default function SponsorsPage() {
               >
                 <p className={`text-sm uppercase tracking-wider mb-2 ${
                   type.color === 'green' ? 'text-neon-green' : 
-                  type.color === 'pink' ? 'text-neon-pink' : 'text-neon-magenta'
+                  type.color === 'pink' ? 'text-neon-pink' : 'text-neon-yellow'
                 }`}>
                   {type.highlight}
                 </p>
@@ -124,7 +140,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* What Partners Get */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="what-partners-get" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="section-container relative z-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-display text-4xl text-text-primary mb-8 text-center tracking-wider">
@@ -153,7 +169,7 @@ export default function SponsorsPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
+      <section id="contact" className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">

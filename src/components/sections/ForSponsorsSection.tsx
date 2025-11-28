@@ -13,7 +13,7 @@ export const ForSponsorsSection: React.FC = () => {
       
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-neon-magenta uppercase tracking-[0.3em] text-sm mb-2 font-display">For Sponsors</p>
+          <p className="text-neon-yellow uppercase tracking-[0.3em] text-sm mb-2 font-display">For Sponsors</p>
           <h2 className="font-display text-4xl sm:text-5xl text-text-primary mb-6 tracking-wider">
             PARTNER WITH THE <span className="text-neon-green text-glow-green">FUTURE</span>
           </h2>
@@ -32,8 +32,8 @@ export const ForSponsorsSection: React.FC = () => {
               <p className="font-display text-3xl text-neon-pink text-glow-pink">23K+</p>
               <p className="text-text-muted text-sm uppercase tracking-wider">Regional Gymnasts</p>
             </div>
-            <div className="p-6 bg-surface-card border border-surface-muted hover:border-neon-magenta transition-all duration-300">
-              <p className="font-display text-3xl text-neon-magenta text-glow-magenta">250K+</p>
+            <div className="p-6 bg-surface-card border border-surface-muted hover:border-neon-yellow transition-all duration-300">
+              <p className="font-display text-3xl text-neon-yellow text-glow-yellow">250K+</p>
               <p className="text-text-muted text-sm uppercase tracking-wider">Reachable Audience</p>
             </div>
           </div>

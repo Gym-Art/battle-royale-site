@@ -62,7 +62,7 @@ export const RulesSummarySection: React.FC = () => {
               </div>
               
               <div className="flex items-center gap-4">
-                <span className="flex-shrink-0 w-10 h-10 bg-neon-magenta text-surface-black font-display text-lg flex items-center justify-center shadow-glow-magenta">
+                <span className="flex-shrink-0 w-10 h-10 bg-neon-yellow text-surface-black font-display text-lg flex items-center justify-center shadow-glow-yellow">
                   3
                 </span>
                 <div>

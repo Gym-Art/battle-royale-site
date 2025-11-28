@@ -23,7 +23,7 @@ export const HeroSection: React.FC = () => {
       {/* Decorative glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-neon-green/10 rounded-full blur-[120px] animate-pulse-glow" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-neon-pink/10 rounded-full blur-[100px] animate-pulse-glow" style={{ animationDelay: '1s' }} />
-      <div className="absolute top-1/2 right-1/3 w-[300px] h-[300px] bg-neon-magenta/5 rounded-full blur-[80px]" />
+      <div className="absolute top-1/2 right-1/3 w-[300px] h-[300px] bg-neon-yellow/5 rounded-full blur-[80px]" />
 
       <div className="relative section-container text-center z-10">
         {/* Logo */}
@@ -85,7 +85,7 @@ export const HeroSection: React.FC = () => {
             <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Teams</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-3xl sm:text-4xl text-neon-magenta text-glow-magenta">4</p>
+            <p className="font-display text-3xl sm:text-4xl text-neon-yellow text-glow-yellow">4</p>
             <p className="text-text-muted text-xs uppercase tracking-widest mt-1">Events</p>
           </div>
         </div>

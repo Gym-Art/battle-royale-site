@@ -10,9 +10,9 @@ import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { FAQCategory, getFAQData } from '@/data/faqData';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 
-export default function FAQPage() {
+function FAQContent() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -26,11 +26,6 @@ export default function FAQPage() {
   const [activeCategory, setActiveCategory] = useState<string>(initialCategory);
   const [openItems, setOpenItems] = useState<Set<string>>(new Set());
   const [isInitialLoad, setIsInitialLoad] = useState(true);
-
-  useEffect(() => {
-    initSessionAttribution();
-    trackEvent({ name: 'page_view', meta: { title: 'FAQ' } });
-  }, []);
 
   useEffect(() => {
     const categoryParam = searchParams.get('category');
@@ -71,8 +66,10 @@ export default function FAQPage() {
         return 'text-neon-green';
       case 'pink':
         return 'text-neon-pink';
-      case 'magenta':
-        return 'text-neon-magenta';
+      case 'yellow':
+        return 'text-neon-yellow';
+      default:
+        return 'text-text-primary';
     }
   };
 
@@ -116,5 +113,29 @@ export default function FAQPage() {
 
       <EmailSignupSection />
     </PageLayout>
+  );
+}
+
+export default function FAQPage() {
+  useEffect(() => {
+    initSessionAttribution();
+    trackEvent({ name: 'page_view', meta: { title: 'FAQ' } });
+  }, []);
+
+  return (
+    <Suspense fallback={
+      <PageLayout>
+        <FAQHero />
+        <section className="section-padding bg-surface-dark relative overflow-hidden">
+          <div className="section-container relative z-10">
+            <div className="text-center py-12">
+              <p className="text-text-muted">Loading...</p>
+            </div>
+          </div>
+        </section>
+      </PageLayout>
+    }>
+      <FAQContent />
+    </Suspense>
   );
 }

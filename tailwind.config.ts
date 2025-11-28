@@ -10,21 +10,20 @@ const config: Config = {
     extend: {
       colors: {
         neon: {
-          green: '#5CA05C',
-          pink: '#C87890',
-          magenta: '#A068A0',
-          purple: '#8868A8',
+          green: '#ADD0B3',
+          yellow: '#FDFD96',
+          pink: '#FFD1DC',
         },
         surface: {
           black: '#050508',
           dark: '#0F0F14',
-          muted: '#1A1A2E',
+          muted: '#252540',
           card: '#12121A',
         },
         text: {
           primary: '#E8E8E8',
-          secondary: '#B8B8CC',
-          muted: '#8B8B9E',
+          secondary: '#D0D0E0',
+          muted: '#C0C0D0',
           dark: '#050508',
         },
       }, 
@@ -37,7 +36,7 @@ const config: Config = {
         'glow-green-lg': 'none',
         'glow-pink': 'none',
         'glow-pink-lg': 'none',
-        'glow-magenta': 'none',
+        'glow-yellow': 'none',
       },
       animation: {
         'pulse-glow': 'pulse-glow 2s ease-in-out infinite',

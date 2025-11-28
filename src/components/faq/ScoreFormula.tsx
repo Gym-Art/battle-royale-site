@@ -5,7 +5,7 @@ export const ScoreFormula: React.FC = () => {
       <div className="bg-surface-dark p-4 rounded border border-surface-muted text-center mb-4">
         <p className="text-text-primary font-mono text-lg">
           <span className="text-neon-pink">Normalized Score</span> = (<span className="text-neon-green">FIG Score</span> ÷{' '}
-          <span className="text-neon-magenta">Max Start Value</span>) × 10
+          <span className="text-neon-yellow">Max Start Value</span>) × 10
         </p>
       </div>
       <p className="text-neon-pink font-display text-sm tracking-wider mb-2">EXAMPLE</p>
