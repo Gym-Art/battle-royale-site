@@ -1,7 +1,7 @@
 'use client';
 
 import { TrackedLink } from '@/components/ui/TrackedLink';
-import { siteConfig } from '@/config/site';
+import { siteConfig, SITE_VERSION } from '@/config/site';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
@@ -108,6 +108,9 @@ export const Footer: React.FC = () => {
         <div className="mt-12 pt-8 border-t border-surface-muted text-center">
           <p className="text-text-muted text-sm">
             © {currentYear} <span className="text-neon-green">Gym Art Inc.</span> All rights reserved.
+          </p>
+          <p className="text-text-muted text-xs mt-2">
+            Version {SITE_VERSION}
           </p>
         </div>
       </div>

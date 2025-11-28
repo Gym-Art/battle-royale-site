@@ -1,3 +1,5 @@
+export const SITE_VERSION = '0.0.12';
+
 export type SocialPlatform = 'instagram' | 'tiktok' | 'facebook';
 
 export interface SocialLink {
@@ -12,6 +14,7 @@ export interface SiteConfig {
   emailSignupTargetListId: string;
   contactEmail: string;
   socials: SocialLink[];
+  version: string;
 }
 
 export const siteConfig: SiteConfig = {
@@ -24,5 +27,6 @@ export const siteConfig: SiteConfig = {
     { platform: 'tiktok', label: '@battle.royale', url: 'https://tiktok.com/@gymart.battle.royale' },
     { platform: 'facebook', label: 'Battle Royale', url: 'https://www.facebook.com/profile.php?id=61584420504084' },
   ],
+  version: SITE_VERSION,
 };
 
