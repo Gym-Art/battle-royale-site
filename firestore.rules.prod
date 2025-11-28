@@ -1,0 +1,85 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Production rules - more restrictive
+    
+    // Existing collections (keep your existing rules)
+    // ... your existing rules for analytics_events, email_signups, etc. ...
+    
+    // User profiles in gym_art_users
+    match /gym_art_users/{userId} {
+      allow read: if request.auth != null && 
+        request.auth.uid == userId.replace('USER_', '');
+      allow create, update: if request.auth != null && 
+        request.auth.uid == userId.replace('USER_', '');
+    }
+    
+    // Battle Royale teams
+    match /battleRoyaleTeams/{teamId} {
+      // Public teams are readable by anyone
+      allow read: if resource.data.isPublic == true;
+      
+      // Authenticated users can read teams they're members of
+      allow read: if request.auth != null;
+      
+      // Only authenticated users can create teams (and must be the owner)
+      allow create: if request.auth != null && 
+        request.resource.data.ownerUserId == request.auth.uid;
+      
+      // Only owners or users with edit permission can update
+      allow update: if request.auth != null && 
+        (resource.data.ownerUserId == request.auth.uid ||
+         exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(teamId + '_' + request.auth.uid)));
+      
+      // Only owners can delete
+      allow delete: if request.auth != null && 
+        resource.data.ownerUserId == request.auth.uid;
+    }
+    
+    // Battle Royale team memberships
+    match /battleRoyaleTeamMemberships/{membershipId} {
+      // Users can read their own memberships or memberships for teams they own
+      allow read: if request.auth != null;
+      
+      // Only team owners can create memberships
+      allow create: if request.auth != null;
+      
+      // Users can update their own membership, owners can update any membership in their team
+      allow update: if request.auth != null;
+      
+      // Owners can delete memberships
+      allow delete: if request.auth != null;
+    }
+    
+    // Battle Royale team members
+    match /battleRoyaleTeamMembers/{memberId} {
+      // Users can read members for teams they're members of
+      allow read: if request.auth != null && 
+        exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid));
+      
+      // Users with edit permission can create/update/delete members
+      allow create, update, delete: if request.auth != null && 
+        exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)) &&
+        get(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)).data.canEdit == true;
+    }
+    
+    // Battle Royale team media
+    match /battleRoyaleTeamMedia/{mediaId} {
+      // Users can read media for teams they're members of
+      allow read: if request.auth != null && 
+        exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid));
+      
+      // Users with edit permission can create/update/delete media
+      // Users can also delete their own media items (for comments)
+      allow create, update: if request.auth != null && 
+        exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)) &&
+        get(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)).data.canEdit == true;
+      
+      allow delete: if request.auth != null && 
+        (resource.data.uploaderUserId == request.auth.uid ||
+         (exists(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)) &&
+          get(/databases/$(database)/documents/battleRoyaleTeamMemberships/$(resource.data.teamId + '_' + request.auth.uid)).data.canEdit == true));
+    }
+  }
+}
+

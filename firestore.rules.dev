@@ -1,0 +1,34 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Development rules - more permissive for easier testing
+    // DO NOT use these in production!
+    
+    // Existing collections (analytics, email signups, etc.)
+    // Keep your existing rules for these...
+    
+    // Battle Royale Team Builder - Development Rules
+    // Allow authenticated users to read/write Battle Royale data
+    match /gym_art_users/{userId} {
+      allow read, write: if request.auth != null && 
+        request.auth.uid == userId.replace('USER_', '');
+    }
+    
+    match /battleRoyaleTeams/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    match /battleRoyaleTeamMemberships/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    match /battleRoyaleTeamMembers/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    match /battleRoyaleTeamMedia/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+
