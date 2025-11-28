@@ -4,6 +4,7 @@ import { trackEvent } from '@/analytics/analytics';
 import { initSessionAttribution } from '@/analytics/session';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 import { useEffect, useState } from 'react';
 
 interface TimelineEvent {
@@ -142,6 +143,9 @@ const EventCard: React.FC<EventCardProps> = ({ event, index }) => {
 };
 
 export default function SchedulePage() {
+  const sectionIds = ['proof-of-concept', 'season-events', 'how-it-works', 'future-vision'];
+  useHashNavigation(sectionIds, 100);
+
   useEffect(() => {
     initSessionAttribution();
     trackEvent({ name: 'page_view', meta: { title: 'Schedule' } });
@@ -169,7 +173,7 @@ export default function SchedulePage() {
       </section>
 
       {/* Proof of Concept */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="proof-of-concept" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -191,7 +195,7 @@ export default function SchedulePage() {
       </section>
 
       {/* Event Cards */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
+      <section id="season-events" className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -208,7 +212,7 @@ export default function SchedulePage() {
       </section>
 
       {/* Info Accordions */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="how-it-works" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -321,7 +325,7 @@ export default function SchedulePage() {
       </section>
 
       {/* Future Vision */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
+      <section id="future-vision" className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         <div className="absolute top-1/2 right-0 w-[400px] h-[400px] bg-neon-yellow/5 rounded-full blur-[100px]" />
         

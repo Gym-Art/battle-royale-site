@@ -3,10 +3,12 @@
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { mainNav } from '@/config/nav';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import React, { useState } from 'react';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-surface-muted">
@@ -32,18 +34,25 @@ export const Header: React.FC = () => {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            {mainNav.map((item) => (
-              <TrackedLink
-                key={item.href}
-                href={item.href}
-                eventName="nav_click"
-                eventMeta={{ label: item.label }}
-                className="relative text-sm uppercase tracking-wider text-text-muted hover:text-neon-green hover-glow-green transition-all duration-300 py-2"
-              >
-                {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-neon-pink transition-all duration-300 group-hover:w-full" />
-              </TrackedLink>
-            ))}
+            {mainNav.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <TrackedLink
+                  key={item.href}
+                  href={item.href}
+                  eventName="nav_click"
+                  eventMeta={{ label: item.label }}
+                  className={`relative text-sm uppercase tracking-wider transition-all duration-300 py-2 ${
+                    isActive
+                      ? 'text-neon-green active-nav-glow'
+                      : 'text-text-muted hover:text-neon-green hover-glow-green'
+                  }`}
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-neon-pink transition-all duration-300 group-hover:w-full" />
+                </TrackedLink>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
@@ -65,18 +74,25 @@ export const Header: React.FC = () => {
         {/* Mobile Nav */}
         {mobileMenuOpen && (
           <nav className="md:hidden py-4 border-t border-surface-muted">
-            {mainNav.map((item) => (
-              <TrackedLink
-                key={item.href}
-                href={item.href}
-                eventName="nav_click"
-                eventMeta={{ label: item.label }}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block py-3 text-sm uppercase tracking-wider text-text-muted hover:text-neon-green hover-glow-green transition-all duration-300"
-              >
-                {item.label}
-              </TrackedLink>
-            ))}
+            {mainNav.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <TrackedLink
+                  key={item.href}
+                  href={item.href}
+                  eventName="nav_click"
+                  eventMeta={{ label: item.label }}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block py-3 text-sm uppercase tracking-wider transition-all duration-300 ${
+                    isActive
+                      ? 'text-neon-green active-nav-glow'
+                      : 'text-text-muted hover:text-neon-green hover-glow-green'
+                  }`}
+                >
+                  {item.label}
+                </TrackedLink>
+              );
+            })}
           </nav>
         )}
       </div>

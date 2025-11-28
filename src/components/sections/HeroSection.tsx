@@ -8,7 +8,7 @@ import React from 'react';
 
 export const HeroSection: React.FC = () => {
   return (
-    <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0 bg-surface-black" />
       

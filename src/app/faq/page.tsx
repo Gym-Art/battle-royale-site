@@ -9,6 +9,7 @@ import { FAQHero } from '@/components/faq/FAQHero';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { FAQCategory, getFAQData } from '@/data/faqData';
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 
@@ -17,6 +18,8 @@ function FAQContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const faqData = getFAQData();
+  const sectionIds = ['faq-categories', 'faq-contact'];
+  useHashNavigation(sectionIds, 100);
 
   const validCategoryIds = useMemo(() => faqData.map((cat) => cat.id), [faqData]);
   const categoryParam = searchParams.get('category');
@@ -77,7 +80,7 @@ function FAQContent() {
     <PageLayout>
       <FAQHero />
 
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="faq-categories" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
 
         <div className="section-container relative z-10">

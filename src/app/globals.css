@@ -139,6 +139,14 @@
     color: var(--neon-green);
   }
 
+  /* Active nav glow */
+  .active-nav-glow {
+    text-shadow: 
+      0 0 10px rgba(173, 208, 179, 1),
+      0 0 20px rgba(173, 208, 179, 0.8),
+      0 0 30px rgba(173, 208, 179, 0.6);
+  }
+
   .hover-glow-pink {
     transition: all 0.3s ease;
   }

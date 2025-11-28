@@ -3,7 +3,7 @@ import { siteConfig } from '@/config/site';
 
 export const FAQContactSection: React.FC = () => {
   return (
-    <section className="section-padding bg-surface-black relative overflow-hidden">
+    <section id="faq-contact" className="section-padding bg-surface-black relative overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
 
       <div className="section-container relative z-10">

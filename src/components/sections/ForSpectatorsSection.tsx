@@ -4,7 +4,7 @@ import React from 'react';
 
 export const ForSpectatorsSection: React.FC = () => {
   return (
-    <section className="section-padding bg-surface-black relative overflow-hidden">
+    <section id="for-spectators" className="section-padding bg-surface-black relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-10" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-neon-pink/5 rounded-full blur-[120px]" />

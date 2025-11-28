@@ -1,5 +1,6 @@
 'use client';
 
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 
 interface Section {
   id: string;
@@ -12,18 +13,11 @@ interface JumpToSectionProps {
 }
 
 export const JumpToSection: React.FC<JumpToSectionProps> = ({ sections }) => {
-  const handleClick = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 100; // Account for fixed header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+  const sectionIds = sections.map((s) => s.id);
+  const { scrollToSection } = useHashNavigation(sectionIds, 100);
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth',
-      });
-    }
+  const handleClick = (id: string) => {
+    scrollToSection(id);
   };
 
   return (

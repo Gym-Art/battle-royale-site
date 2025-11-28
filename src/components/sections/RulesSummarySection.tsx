@@ -1,12 +1,12 @@
 'use client';
 
-import React from 'react';
-import { TrackedLink } from '@/components/ui/TrackedLink';
 import { Button } from '@/components/ui/Button';
+import { TrackedLink } from '@/components/ui/TrackedLink';
+import React from 'react';
 
 export const RulesSummarySection: React.FC = () => {
   return (
-    <section className="section-padding bg-surface-black relative overflow-hidden">
+    <section id="rules-summary" className="section-padding bg-surface-black relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-10" />
       <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-neon-green/5 rounded-full blur-[100px]" />

@@ -27,7 +27,7 @@ export const ForAthletesSection: React.FC = () => {
   ];
 
   return (
-    <section className="section-padding bg-surface-dark relative overflow-hidden">
+    <section id="for-athletes" className="section-padding bg-surface-dark relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-20" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-neon-green/5 rounded-full blur-[100px]" />

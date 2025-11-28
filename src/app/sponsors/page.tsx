@@ -8,9 +8,13 @@ import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { Button } from '@/components/ui/Button';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { siteConfig } from '@/config/site';
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 import { useEffect } from 'react';
 
 export default function SponsorsPage() {
+  const sectionIds = ['market-opportunity', 'partnership-tiers', 'what-partners-get', 'contact'];
+  useHashNavigation(sectionIds, 100);
+
   useEffect(() => {
     initSessionAttribution();
     trackEvent({ name: 'page_view', meta: { title: 'Sponsors' } });

@@ -7,10 +7,23 @@ import { JumpToSection } from '@/components/layout/JumpToSection';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { TrackedLink } from '@/components/ui/TrackedLink';
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
 export default function RulesPage() {
+  const sectionIds = [
+    'fundamentals',
+    'team-composition',
+    'apparatus',
+    'score-normalization',
+    'judging',
+    'competition-flow',
+    'registration',
+    'prizes',
+  ];
+  useHashNavigation(sectionIds, 100);
+
   useEffect(() => {
     initSessionAttribution();
     trackEvent({ name: 'page_view', meta: { title: 'Format & Rules' } });

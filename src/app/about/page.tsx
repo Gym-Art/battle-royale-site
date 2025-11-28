@@ -7,9 +7,13 @@ import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { Button } from '@/components/ui/Button';
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { siteConfig } from '@/config/site';
+import { useHashNavigation } from '@/hooks/useHashNavigation';
 import { useEffect } from 'react';
 
 export default function AboutPage() {
+  const sectionIds = ['vision', 'why-now', 'gym-art', 'contact'];
+  useHashNavigation(sectionIds, 100);
+
   useEffect(() => {
     initSessionAttribution();
     trackEvent({ name: 'page_view', meta: { title: 'About' } });
@@ -36,7 +40,7 @@ export default function AboutPage() {
       </section>
 
       {/* Vision */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="vision" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -77,7 +81,7 @@ export default function AboutPage() {
       </section>
 
       {/* Why Now */}
-      <section className="section-padding bg-surface-black relative overflow-hidden">
+      <section id="why-now" className="section-padding bg-surface-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-neon-green/5 rounded-full blur-[100px]" />
         
@@ -110,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* Gym Art */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="gym-art" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-10" />
         
         <div className="section-container relative z-10">
@@ -139,7 +143,7 @@ export default function AboutPage() {
       </section>
 
       {/* Contact */}
-      <section className="section-padding bg-surface-dark relative overflow-hidden">
+      <section id="contact" className="section-padding bg-surface-dark relative overflow-hidden">
         <div className="section-container relative z-10">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="font-display text-4xl text-text-primary mb-4 tracking-wider">
