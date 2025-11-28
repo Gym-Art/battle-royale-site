@@ -1,5 +1,6 @@
 import { siteConfig } from '@/config/site';
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import type { Metadata } from 'next';
 import { Orbitron, Space_Grotesk } from 'next/font/google';
 import './globals.css';
@@ -42,8 +43,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${spaceGrotesk.variable}`}>
-      <body className="font-body">{children}</body>
-      <Analytics />
+      <body className="font-body">
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
