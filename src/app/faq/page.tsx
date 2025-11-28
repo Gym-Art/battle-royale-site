@@ -9,17 +9,46 @@ import { FAQHero } from '@/components/faq/FAQHero';
 import { PageLayout } from '@/components/layout/PageLayout';
 import { EmailSignupSection } from '@/components/sections/EmailSignupSection';
 import { FAQCategory, getFAQData } from '@/data/faqData';
-import { useEffect, useState } from 'react';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useMemo, useState } from 'react';
 
 export default function FAQPage() {
-  const [activeCategory, setActiveCategory] = useState<string>('general');
-  const [openItems, setOpenItems] = useState<Set<string>>(new Set());
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
   const faqData = getFAQData();
+
+  const validCategoryIds = useMemo(() => faqData.map((cat) => cat.id), [faqData]);
+  const categoryParam = searchParams.get('category');
+  const initialCategory =
+    categoryParam && validCategoryIds.includes(categoryParam) ? categoryParam : 'general';
+
+  const [activeCategory, setActiveCategory] = useState<string>(initialCategory);
+  const [openItems, setOpenItems] = useState<Set<string>>(new Set());
+  const [isInitialLoad, setIsInitialLoad] = useState(true);
 
   useEffect(() => {
     initSessionAttribution();
     trackEvent({ name: 'page_view', meta: { title: 'FAQ' } });
   }, []);
+
+  useEffect(() => {
+    const categoryParam = searchParams.get('category');
+    if (categoryParam && validCategoryIds.includes(categoryParam)) {
+      setActiveCategory(categoryParam);
+      if (isInitialLoad) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        setIsInitialLoad(false);
+      }
+    }
+  }, [searchParams, validCategoryIds, isInitialLoad]);
+
+  const handleCategoryChange = (categoryId: string) => {
+    setActiveCategory(categoryId);
+    const params = new URLSearchParams(searchParams.toString());
+    params.set('category', categoryId);
+    router.push(`${pathname}?${params.toString()}`, { scroll: false });
+  };
 
   const toggleItem = (categoryId: string, index: number) => {
     const key = `${categoryId}-${index}`;
@@ -58,7 +87,7 @@ export default function FAQPage() {
           <FAQCategoryTabs
             categories={faqData}
             activeCategory={activeCategory}
-            onCategoryChange={setActiveCategory}
+            onCategoryChange={handleCategoryChange}
           />
 
           {activeData && (
