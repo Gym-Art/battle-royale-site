@@ -17,6 +17,8 @@ export interface SiteConfig {
   version: string;
 }
 
+// TODO: Move translatable strings to translation files (src/messages/*.json)
+// Use useTranslations() hook in components to access translated strings
 export const siteConfig: SiteConfig = {
   name: 'Battle Royale',
   tagline: 'Pro-style gymnastics battles. Live crowd. Real stakes.',
