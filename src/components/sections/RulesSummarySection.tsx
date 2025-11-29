@@ -2,9 +2,12 @@
 
 import { Button } from '@/components/ui/Button';
 import { TrackedLink } from '@/components/ui/TrackedLink';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export const RulesSummarySection: React.FC = () => {
+  const t = useTranslations('home.rulesSummary');
+  
   return (
     <section id="rules-summary" className="section-padding bg-surface-black relative overflow-hidden">
       {/* Background effects */}
@@ -15,30 +18,23 @@ export const RulesSummarySection: React.FC = () => {
       <div className="section-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-neon-green uppercase tracking-[0.3em] text-sm mb-2 font-display">The Format</p>
+            <p className="text-neon-green uppercase tracking-[0.3em] text-sm mb-2 font-display">{t('label')}</p>
             <h2 className="font-display text-4xl sm:text-5xl text-text-primary mb-6 tracking-wider">
-              SIMPLE. FAIR. <span className="text-neon-pink text-glow-pink">EXCITING.</span>
+              {t('heading').replace(/EXCITING\.|EXCITANT\./g, '').trim()}{' '}
+              <span className="text-neon-pink text-glow-pink">
+                {t('heading').includes('EXCITING.') ? 'EXCITING.' : 'EXCITANT.'}
+              </span>
             </h2>
             
             <div className="space-y-4 text-text-muted">
-              <p>
-                Traditional gymnastics scoring is confusing. Different apparatus, different max scores, 
-                impossible to compare. <span className="text-neon-green">We fixed that.</span>
-              </p>
-              <p>
-                <span className="text-neon-pink">Score Normalization:</span> Every routine is judged using standard FIG rules, 
-                then normalized to a maximum of 10. This means you can directly compare a beam routine 
-                to a high bar routine—apples to apples.
-              </p>
-              <p>
-                This breakthrough allows mixed WAG/MAG teams and makes every score instantly 
-                understandable to casual viewers.
-              </p>
+              <p>{t('paragraph1')}</p>
+              <p>{t('paragraph2')}</p>
+              <p>{t('paragraph3')}</p>
             </div>
           </div>
 
           <div className="bg-surface-card border border-surface-muted p-8">
-            <h3 className="font-display text-2xl text-text-primary mb-6 tracking-wide">COMPETITION FLOW</h3>
+            <h3 className="font-display text-2xl text-text-primary mb-6 tracking-wide">{t('competitionFlow.title')}</h3>
             
             <div className="space-y-4">
               <div className="flex items-center gap-4">
@@ -46,8 +42,8 @@ export const RulesSummarySection: React.FC = () => {
                   1
                 </span>
                 <div>
-                  <p className="text-text-primary font-semibold font-display tracking-wide">QUALIFICATION</p>
-                  <p className="text-text-muted text-sm">64 teams → 8 routines each → Top 12 advance</p>
+                  <p className="text-text-primary font-semibold font-display tracking-wide">{t('competitionFlow.qualification.title')}</p>
+                  <p className="text-text-muted text-sm">{t('competitionFlow.qualification.description')}</p>
                 </div>
               </div>
               
@@ -56,8 +52,8 @@ export const RulesSummarySection: React.FC = () => {
                   2
                 </span>
                 <div>
-                  <p className="text-text-primary font-semibold font-display tracking-wide">SEMI-FINALS</p>
-                  <p className="text-text-muted text-sm">12 teams → 6 routines each → Top 4 advance</p>
+                  <p className="text-text-primary font-semibold font-display tracking-wide">{t('competitionFlow.semiFinals.title')}</p>
+                  <p className="text-text-muted text-sm">{t('competitionFlow.semiFinals.description')}</p>
                 </div>
               </div>
               
@@ -66,8 +62,8 @@ export const RulesSummarySection: React.FC = () => {
                   3
                 </span>
                 <div>
-                  <p className="text-text-primary font-semibold font-display tracking-wide">FINALS</p>
-                  <p className="text-text-muted text-sm">4 teams → 4 routines each → One champion</p>
+                  <p className="text-text-primary font-semibold font-display tracking-wide">{t('competitionFlow.finals.title')}</p>
+                  <p className="text-text-muted text-sm">{t('competitionFlow.finals.description')}</p>
                 </div>
               </div>
             </div>
@@ -78,7 +74,7 @@ export const RulesSummarySection: React.FC = () => {
                 eventMeta={{ ctaId: 'rules_summary_cta', label: 'Full Rules', sectionId: 'rules_summary' }}
               >
                 <Button variant="ghost" className="w-full">
-                  See Full Rules & Scoring
+                  {t('button')}
                 </Button>
               </TrackedLink>
             </div>

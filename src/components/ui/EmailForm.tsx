@@ -3,10 +3,12 @@
 import { trackEvent } from '@/analytics/analytics';
 import { getSessionAttribution } from '@/analytics/session';
 import { siteConfig } from '@/config/site';
+import { useTranslations } from 'next-intl';
 import React, { useState } from 'react';
 import { Button } from './Button';
 
 export const EmailForm: React.FC = () => {
+  const t = useTranslations('home.emailForm');
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
@@ -52,7 +54,7 @@ export const EmailForm: React.FC = () => {
       <input
         type="email"
         required
-        placeholder="Enter your email"
+        placeholder={t('placeholder')}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         className="flex-1 px-4 py-3 bg-surface-dark border border-surface-muted text-text-primary placeholder-text-muted 
@@ -61,17 +63,17 @@ export const EmailForm: React.FC = () => {
         disabled={status === 'submitting'}
       />
       <Button type="submit" disabled={status === 'submitting'} variant="primary">
-        {status === 'submitting' ? 'Joining...' : 'Join Waitlist'}
+        {status === 'submitting' ? t('buttonLoading') : t('button')}
       </Button>
       
       {status === 'success' && (
         <p className="absolute -bottom-8 left-0 text-neon-green text-sm text-glow-green">
-          You&apos;re on the list.
+          {t('success')}
         </p>
       )}
       {status === 'error' && (
         <p className="absolute -bottom-8 left-0 text-neon-pink text-sm">
-          Something went wrong. Try again.
+          {t('error')}
         </p>
       )}
     </form>

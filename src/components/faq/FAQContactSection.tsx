@@ -1,7 +1,13 @@
+'use client';
+
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { siteConfig } from '@/config/site';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 export const FAQContactSection: React.FC = () => {
+  const t = useTranslations('faq.contact');
+  
   return (
     <section id="faq-contact" className="section-padding bg-surface-black relative overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-10 pointer-events-none" />
@@ -9,10 +15,11 @@ export const FAQContactSection: React.FC = () => {
       <div className="section-container relative z-10">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-display text-3xl text-text-primary mb-4 tracking-wider">
-            STILL HAVE <span className="text-neon-green text-glow-green">QUESTIONS?</span>
+            {t('heading.part1')}{' '}
+            <span className="text-neon-green text-glow-green">{t('heading.highlight')}</span>
           </h2>
           <p className="text-text-secondary mb-8">
-            Can&apos;t find what you&apos;re looking for? Reach out directly and we&apos;ll get back to you.
+            {t('description')}
           </p>
 
           <TrackedLink

@@ -1,6 +1,8 @@
 'use client';
 
 import { useHashNavigation } from '@/hooks/useHashNavigation';
+import { useTranslations } from 'next-intl';
+import { TrackedLink } from '@/components/ui/TrackedLink';
 
 interface Section {
   id: string;
@@ -13,6 +15,7 @@ interface JumpToSectionProps {
 }
 
 export const JumpToSection: React.FC<JumpToSectionProps> = ({ sections }) => {
+  const t = useTranslations('common');
   const sectionIds = sections.map((s) => s.id);
   const { scrollToSection } = useHashNavigation(sectionIds, 100);
 
@@ -23,7 +26,16 @@ export const JumpToSection: React.FC<JumpToSectionProps> = ({ sections }) => {
   return (
     <div className="sticky top-20 z-40 mb-8">
       <div className="bg-surface-dark/95 backdrop-blur-sm border border-surface-muted rounded-lg p-4">
-        <p className="text-text-muted text-sm mb-3 font-display tracking-wider">JUMP TO SECTION</p>
+        <div className="flex items-center justify-between mb-3">
+          <p className="text-text-muted text-sm font-display tracking-wider">{t('jumpToSection')}</p>
+          <TrackedLink
+            href="/"
+            eventMeta={{ ctaId: 'jump_to_home', label: 'Home' }}
+            className="text-text-muted hover:text-neon-green text-sm transition-colors"
+          >
+            ({t('home')})
+          </TrackedLink>
+        </div>
         <div className="flex flex-wrap gap-2">
           {sections.map((section) => {
             const colorClass =

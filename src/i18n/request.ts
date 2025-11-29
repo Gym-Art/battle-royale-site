@@ -8,9 +8,12 @@ export default getRequestConfig(async ({ requestLocale }) => {
     locale = routing.defaultLocale;
   }
 
+  // Load only common messages (nav, common strings) in the layout
+  // Page-specific messages will be loaded dynamically in each page
+  const commonMessages = (await import(`@/messages/${locale}/common.json`)).default;
+
   return {
     locale,
-    messages: (await import(`@/messages/${locale}.json`)).default,
+    messages: commonMessages,
   };
 });
-

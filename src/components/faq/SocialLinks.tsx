@@ -1,10 +1,16 @@
+'use client';
+
 import { TrackedLink } from '@/components/ui/TrackedLink';
 import { siteConfig } from '@/config/site';
+import { useTranslations } from 'next-intl';
+import React from 'react';
 
 export const SocialLinks: React.FC = () => {
+  const t = useTranslations('faq.socialLinks');
+  
   return (
     <span>
-      Follow us on{' '}
+      {t('followUs')}{' '}
       <TrackedLink
         href={siteConfig.socials[0].url}
         eventMeta={{ ctaId: 'faq_social_instagram', label: 'Instagram' }}
@@ -20,7 +26,7 @@ export const SocialLinks: React.FC = () => {
       >
         TikTok
       </TrackedLink>
-      , and{' '}
+      , {t('or')}{' '}
       <TrackedLink
         href={siteConfig.socials[2].url}
         eventMeta={{ ctaId: 'faq_social_facebook', label: 'Facebook' }}
@@ -28,13 +34,13 @@ export const SocialLinks: React.FC = () => {
       >
         Facebook
       </TrackedLink>
-      , or{' '}
+      , {t('or')}{' '}
       <TrackedLink
         href="#stay-connected"
         eventMeta={{ ctaId: 'faq_email_signup', label: 'Email Signup' }}
         className="text-neon-green hover:underline"
       >
-        join our email list
+        {t('joinEmailList')}
       </TrackedLink>
       .
     </span>

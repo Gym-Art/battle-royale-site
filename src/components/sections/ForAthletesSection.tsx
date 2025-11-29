@@ -1,27 +1,30 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export const ForAthletesSection: React.FC = () => {
+  const t = useTranslations('home.forAthletes');
+  
   const highlights = [
     {
-      title: 'Real Cash Prizes',
-      description: '$25K per event. $100K total in Year 1. 1st place takes $15K, 2nd $7.5K, 3rd $2.5K.',
+      title: t('highlights.cashPrizes.title'),
+      description: t('highlights.cashPrizes.description'),
       color: 'green',
     },
     {
-      title: 'Mixed Teams',
-      description: 'Build your own team of 3+ gymnasts. All women, all men, or any mix—your choice.',
+      title: t('highlights.mixedTeams.title'),
+      description: t('highlights.mixedTeams.description'),
       color: 'pink',
     },
     {
-      title: 'FIG-Level Competition',
-      description: 'Same routines. Same judging. Same rules. Just normalized scores for fair cross-apparatus comparison.',
+      title: t('highlights.figLevel.title'),
+      description: t('highlights.figLevel.description'),
       color: 'green',
     },
     {
-      title: '4 Events Per Year',
-      description: 'Each event is one day: Qualification → Semi-Final → Final. Multiple chances to compete and win.',
+      title: t('highlights.fourEvents.title'),
+      description: t('highlights.fourEvents.description'),
       color: 'pink',
     },
   ];
@@ -34,9 +37,10 @@ export const ForAthletesSection: React.FC = () => {
       
       <div className="section-container relative z-10">
         <div className="text-center mb-12">
-          <p className="text-neon-green uppercase tracking-[0.3em] text-sm mb-2 font-display">For Athletes</p>
+          <p className="text-neon-green uppercase tracking-[0.3em] text-sm mb-2 font-display">{t('label')}</p>
           <h2 className="font-display text-4xl sm:text-5xl text-text-primary tracking-wider">
-            COMPETE LIKE A <span className="text-neon-pink text-glow-pink">PRO</span>
+            {t('heading').replace('PRO', '').trim()}{' '}
+            <span className="text-neon-pink text-glow-pink">PRO</span>
           </h2>
         </div>
 
@@ -63,11 +67,16 @@ export const ForAthletesSection: React.FC = () => {
 
         <div className="mt-12 p-8 border-l-4 border-neon-green bg-gradient-to-r from-neon-green/10 to-transparent">
           <p className="text-lg text-text-primary">
-            <span className="text-neon-green font-semibold">Open invitational:</span>{' '}
-            <span className="text-text-muted">
-              Any gymnast 16+ who can perform FIG-level routines is welcome. 
-              No federation restrictions. No qualification hoops. Just bring your team and compete.
-            </span>
+            {t('callout').includes(':') ? (
+              <>
+                <span className="text-neon-green font-semibold">{t('callout').split(':')[0]}:</span>{' '}
+                <span className="text-text-muted">
+                  {t('callout').split(':').slice(1).join(':').trim()}
+                </span>
+              </>
+            ) : (
+              <span className="text-text-muted">{t('callout')}</span>
+            )}
           </p>
         </div>
       </div>

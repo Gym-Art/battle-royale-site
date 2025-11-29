@@ -1,9 +1,12 @@
 'use client';
 
 import { EmailForm } from '@/components/ui/EmailForm';
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 export const EmailSignupSection: React.FC = () => {
+  const t = useTranslations('home.emailSignup');
+  
   return (
     <section id="stay-connected" className="section-padding bg-gradient-to-b from-surface-dark via-surface-black to-surface-black relative overflow-hidden">
       {/* Background effects */}
@@ -15,13 +18,15 @@ export const EmailSignupSection: React.FC = () => {
       
       <div className="section-container relative z-10">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-neon-pink uppercase tracking-[0.3em] text-sm mb-2 font-display">Stay Connected</p>
+          <p className="text-neon-pink uppercase tracking-[0.3em] text-sm mb-2 font-display">{t('label')}</p>
           <h2 className="font-display text-4xl sm:text-5xl text-text-primary mb-4 tracking-wider">
-            JOIN THE <span className="text-neon-green text-glow-green">WAITLIST</span>
+            {t('heading').replace(/WAITLIST|LISTE D'ATTENTE/g, '').trim()}{' '}
+            <span className="text-neon-green text-glow-green">
+              {t('heading').includes('WAITLIST') ? 'WAITLIST' : "LISTE D'ATTENTE"}
+            </span>
           </h2>
           <p className="text-text-muted mb-8">
-            Be the first to know when registration opens. Get early access to dates, venues, 
-            tickets, and exclusive updates.
+            {t('description')}
           </p>
           
           <div className="flex justify-center mb-12">
@@ -29,7 +34,7 @@ export const EmailSignupSection: React.FC = () => {
           </div>
 
           <p className="text-text-muted/50 text-sm">
-            We respect your inbox. No spam, just important <span className="text-neon-green">Battle Royale</span> updates.
+            {t('footer')}
           </p>
         </div>
       </div>

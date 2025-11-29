@@ -1,7 +1,8 @@
 'use client';
 
 import { TrackedLink } from '@/components/ui/TrackedLink';
-import { siteConfig, SITE_VERSION } from '@/config/site';
+import { SITE_VERSION, siteConfig } from '@/config/site';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
@@ -24,6 +25,8 @@ const socialIcons: Record<string, React.ReactNode> = {
 };
 
 export const Footer: React.FC = () => {
+  const t = useTranslations('common');
+  const tFooter = useTranslations('footer');
   const [currentYear, setCurrentYear] = useState(2026);
 
   useEffect(() => {
@@ -42,21 +45,21 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-3 mb-3">
               <Image
                 src="/logo.svg"
-                alt="Battle Royale"
+                alt={t('siteName')}
                 width={32}
                 height={32}
                 className="drop-shadow-[0_0_8px_rgba(57,255,20,0.6)]"
               />
               <h3 className="font-display text-xl text-neon-green tracking-widest">
-                BATTLE ROYALE
+                {t('siteName').toUpperCase()}
               </h3>
             </div>
-            <p className="text-text-muted text-sm">{siteConfig.tagline}</p>
+            <p className="text-text-muted text-sm">{t('tagline')}</p>
           </div>
 
           {/* Learn More */}
           <div>
-            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">GYM ART</h4>
+            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">{tFooter('gymArt.heading')}</h4>
             <TrackedLink
               href="https://gymart.org"
               eventMeta={{ label: 'Learn More Gym Art', ctaId: 'footer_gymart_link' }}
@@ -64,7 +67,7 @@ export const Footer: React.FC = () => {
               rel="noopener noreferrer"
               className="text-text-muted hover:text-neon-green hover-glow-green transition-all duration-300 text-sm flex items-center gap-2"
             >
-              Learn more about Gym Art
+              {tFooter('gymArt.learnMore')}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
@@ -73,7 +76,7 @@ export const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">CONTACT</h4>
+            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">{tFooter('contact.heading')}</h4>
             <TrackedLink
               href={`mailto:${siteConfig.contactEmail}`}
               eventMeta={{ label: 'Footer Email', ctaId: 'footer_email' }}
@@ -85,7 +88,7 @@ export const Footer: React.FC = () => {
 
           {/* Social */}
           <div>
-            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">FOLLOW US</h4>
+            <h4 className="font-display text-lg text-text-primary mb-3 tracking-wider">{tFooter('social.heading')}</h4>
             <div className="flex gap-4">
               {siteConfig.socials.map((social) => (
                 <TrackedLink
@@ -107,10 +110,10 @@ export const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-surface-muted text-center">
           <p className="text-text-muted text-sm">
-            © {currentYear} <span className="text-neon-green">Gym Art Inc.</span> All rights reserved.
+            {tFooter('copyright', { year: currentYear })}
           </p>
           <p className="text-text-muted text-xs mt-2">
-            Version {SITE_VERSION}
+            {tFooter('version', { version: SITE_VERSION })}
           </p>
         </div>
       </div>

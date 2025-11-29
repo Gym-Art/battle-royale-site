@@ -1,9 +1,11 @@
 'use client';
 
 import { BR_EVENTS } from '@/data/brEvents';
+import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
 
 export const AgeCalculator: React.FC = () => {
+  const t = useTranslations('common.ageCalculator');
   const [birthDate, setBirthDate] = useState('');
   const [selectedEvent, setSelectedEvent] = useState('br1');
   const [result, setResult] = useState<{ age: number; eligible: boolean } | null>(null);
@@ -31,10 +33,10 @@ export const AgeCalculator: React.FC = () => {
 
   return (
     <div className="mt-4 p-4 bg-surface-muted/30 border border-surface-muted rounded">
-      <p className="text-neon-pink font-display text-sm tracking-wider mb-3">AGE CALCULATOR</p>
+      <p className="text-neon-pink font-display text-sm tracking-wider mb-3">{t('title')}</p>
       <div className="flex flex-col sm:flex-row gap-3 mb-3">
         <div className="flex-1">
-          <label className="block text-text-secondary text-sm mb-1">Your birthdate</label>
+          <label className="block text-text-secondary text-sm mb-1">{t('birthdateLabel')}</label>
           <input
             type="date"
             value={birthDate}
@@ -43,7 +45,7 @@ export const AgeCalculator: React.FC = () => {
           />
         </div>
         <div className="flex-1">
-          <label className="block text-text-secondary text-sm mb-1">Event</label>
+          <label className="block text-text-secondary text-sm mb-1">{t('eventLabel')}</label>
           <select
             value={selectedEvent}
             onChange={(e) => setSelectedEvent(e.target.value)}
@@ -64,16 +66,14 @@ export const AgeCalculator: React.FC = () => {
           }`}
         >
           <p className="text-text-primary">
-            You will be{' '}
+            {t('ageOnEventDay')}{' '}
             <span className={`font-bold ${result.eligible ? 'text-neon-green' : 'text-red-400'}`}>
-              {result.age} years old
+              {result.age} {t('yearsOld')}
             </span>{' '}
-            on event day.
+            {t('onEventDay')}
           </p>
           <p className={`text-sm mt-1 ${result.eligible ? 'text-neon-green' : 'text-red-400'}`}>
-            {result.eligible
-              ? '✓ You meet the age requirement!'
-              : '✗ You must be at least 16 years old on event day.'}
+            {result.eligible ? t('eligible') : t('notEligible')}
           </p>
         </div>
       )}
