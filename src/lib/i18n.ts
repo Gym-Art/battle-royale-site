@@ -11,7 +11,7 @@ export function useI18n() {
  */
 export async function loadPageMessages(locale: string, page: string) {
   try {
-    const pageMessages = (await import(`@/messages/${locale}/${page}.json`)).default;
+    const pageMessages = (await import(`../messages/${locale}/${page}.json`)).default;
     return pageMessages;
   } catch (error) {
     // Page-specific translations not found, return empty object

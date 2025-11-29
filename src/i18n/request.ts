@@ -10,7 +10,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   // Load only common messages (nav, common strings) in the layout
   // Page-specific messages will be loaded dynamically in each page
-  const commonMessages = (await import(`@/messages/${locale}/common.json`)).default;
+  const commonMessages = (await import(`../messages/${locale}/common.json`)).default;
 
   return {
     locale,
