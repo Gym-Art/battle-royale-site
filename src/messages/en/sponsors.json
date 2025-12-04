@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "label": "Partnership Opportunities",
+    "heading": {
+      "part1": "SPONSOR",
+      "highlight": "BATTLE ROYALE"
+    },
+    "description": "Partner with the first professional gymnastics league. Reach a passionate, underserved audience with year-round engagement opportunities."
+  },
+  "jumpToSection": {
+    "marketOpportunity": "Market Opportunity",
+    "partnershipTiers": "Partnership Tiers",
+    "whatPartnersGet": "What Partners Get",
+    "contact": "Contact"
+  },
+  "marketOpportunity": {
+    "heading": "THE MARKET OPPORTUNITY",
+    "stats": {
+      "paris2024Viewers": {
+        "value": "41.5M",
+        "label": "Paris 2024 gymnastics viewers",
+        "subtext": "Most-watched Olympic sport"
+      },
+      "existingLeagues": {
+        "value": "0",
+        "label": "Existing pro leagues",
+        "subtext": "No year-round competition"
+      },
+      "reachableAudience": {
+        "value": "250K+",
+        "label": "Reachable regional audience",
+        "subtext": "Parents, athletes, coaches"
+      }
+    },
+    "gapCallout": {
+      "prefix": "The gap:",
+      "text": "Gymnastics has massive global interest but no professional ecosystem. No repeatable events. No team culture. No scalable revenue model.",
+      "highlight": "Battle Royale fills this gap",
+      "suffix": "with a spectator-first format designed for growth."
+    }
+  },
+  "partnershipTiers": {
+    "heading": "PARTNERSHIP TIERS",
+    "types": {
+      "cashPrize": {
+        "title": "Cash Prize Partners",
+        "description": "Support athlete rewards directly. Your brand associated with the prize pool and winner presentations.",
+        "highlight": "$25,000 prize pool"
+      },
+      "merchApparel": {
+        "title": "Merch & Apparel Partners",
+        "description": "Outfit the competition. Exclusive branding on official Battle Royale merchandise and team apparel.",
+        "highlight": "High visibility"
+      },
+      "equipmentServices": {
+        "title": "Equipment & Services Partners",
+        "description": "Provide equipment, technology, or services. Long-term association with the league infrastructure.",
+        "highlight": "Year-round presence"
+      }
+    }
+  },
+  "whatPartnersGet": {
+    "heading": "WHAT PARTNERS RECEIVE",
+    "benefits": [
+      "Event-day visibility: logo placement, announcements, branded areas",
+      "Digital presence: website, social media, live stream integration",
+      "Direct access to the gymnastics community through Gym Art platform",
+      "Hospitality: VIP access, meet-and-greets with athletes",
+      "Long-term association with the first professional gymnastics league",
+      "Exclusivity options within partnership category"
+    ]
+  },
+  "contact": {
+    "heading": {
+      "part1": "LET'S",
+      "highlight": "TALK"
+    },
+    "description": "Interested in partnering with Battle Royale? Reach out to discuss how we can create value together."
+  }
+}
+

@@ -1,0 +1,414 @@
+{
+  "hero": {
+    "label": "Des questions?",
+    "heading": {
+      "part1": "QUESTIONS",
+      "highlight": "FRÉQUENTES"
+    },
+    "description": "Tout ce que vous devez savoir sur Battle Royale—pour les gymnastes, entraîneurs, juges, spectateurs et commanditaires."
+  },
+  "contact": {
+    "heading": {
+      "part1": "ENCORE DES",
+      "highlight": "QUESTIONS?"
+    },
+    "description": "Vous ne trouvez pas ce que vous cherchez? Contactez-nous directement et nous vous répondrons."
+  },
+  "categories": {
+    "general": "Général",
+    "gymnasts": "Pour les gymnastes",
+    "coaches": "Pour les entraîneurs",
+    "judges": "Pour les juges",
+    "spectators": "Pour les spectateurs",
+    "sponsors": "Pour les commanditaires",
+    "format": "Format de compétition",
+    "logistics": "Logistique et horaire"
+  },
+  "socialLinks": {
+    "followUs": "Suivez-nous sur",
+    "or": "ou",
+    "joinEmailList": "rejoignez notre liste de diffusion"
+  },
+  "scoreFormula": {
+    "formulaTitle": "LA FORMULE",
+    "normalizedScore": "Résultat Normalisé",
+    "figScore": "Résultat FIG",
+    "maxStartValue": "Valeur de Départ Max",
+    "exampleTitle": "EXEMPLE",
+    "exampleText": {
+      "prefix": "Un gymnaste obtient",
+      "suffix": "au Saut Hommes (Dragulescu carpé):"
+    },
+    "exampleNote": "Note: En gymnastique masculine, la valeur de départ la plus élevée possible au Saut est de 15,6 (ex. un Dragulescu carpé)."
+  },
+  "general": {
+    "whatIsBattleRoyale": {
+      "question": "Qu'est-ce que Battle Royale?",
+      "answer": "Battle Royale est la première ligue de gymnastique professionnelle, conçue d'abord pour les spectateurs. Elle comprend des équipes mixtes, une notation normalisée sur 10, de vrais prix en argent (en CAD), et un format d'élimination d'une journée qui rend la gymnastique facile à suivre et excitante à regarder."
+    },
+    "whoOrganizes": {
+      "question": "Qui organise Battle Royale?",
+      "answer": "Battle Royale est produit par Gym Art Inc., la société derrière Gym Art Meets—une plateforme de bout en bout pour la gestion des compétitions de gymnastique."
+    },
+    "whenAndWhere": {
+      "question": "Quand et où se déroulent les événements?",
+      "answer": "La saison 1 se déroule de novembre 2026 à juin 2027 avec 4 événements en Ontario et au Québec, Canada. Le premier événement (BR 1) est le 21 novembre 2026. Un événement de preuve de concept est prévu pour le 21 juin 2026."
+    },
+    "howDifferent": {
+      "question": "En quoi Battle Royale est-il différent des compétitions de gymnastique traditionnelles?",
+      "answer": "Les compétitions traditionnelles s'étalent sur plusieurs jours, séparent les hommes et les femmes, utilisent des systèmes de notation confus et dépendent des inscriptions des gymnastes pour les revenus. Battle Royale est un spectacle d'une journée avec des équipes mixtes, des résultats normalisés sur 10, des prix en argent, et un format conçu pour le divertissement."
+    },
+    "prizePool": {
+      "question": "Quel est le montant des prix?",
+      "answer": "25 000 $ CAD par événement, répartis comme suit: 1re place 15 000 $ CAD, 2e place 7 500 $ CAD, 3e place 2 500 $ CAD. Les équipes classées 4e à 8e reçoivent des produits exclusifs Battle Royale. Total année 1: 100 000 $ CAD en prix sur 4 événements."
+    },
+    "affiliated": {
+      "question": "Est-ce affilié à une fédération de gymnastique?",
+      "answer": "Battle Royale est une compétition d'invitation indépendante. Bien que nous utilisions les normes de jugement et le Code de Pointage de la FIG (Fédération Internationale de Gymnastique), nous ne sommes pas un événement de qualification sanctionné par une fédération. Cela nous donne la liberté d'innover sur le format et la notation."
+    }
+  },
+  "gymnasts": {
+    "whoCanCompete": {
+      "question": "Qui peut compétir?",
+      "text": "Tout gymnaste âgé de 16 ans et plus le jour de l'événement qui peut exécuter des routines de niveau FIG. Aucune adhésion à une fédération requise. Aucune exigence de qualification. Format d'invitation ouvert."
+    },
+    "ageRequirements": {
+      "question": "Quelles sont les exigences d'âge?",
+      "text": "Les athlètes doivent avoir au moins 16 ans le jour de l'événement. Il n'y a pas de limite d'âge supérieure."
+    },
+    "skillLevel": {
+      "question": "Quel niveau de compétence est requis?",
+      "p1": "Les athlètes doivent être capables d'exécuter des routines de niveau Senior FIG. Cela signifie généralement des gymnastes compétitifs de niveau 10, Elite ou NCAA pour GAF, et niveau 10 ou Elite pour GAM.",
+      "p2": "Une routine FIG consiste en 6-8 éléments du Code de Pointage FIG.",
+      "magCop": "Code de Pointage GAM (2025-2028)",
+      "wagCop": "Code de Pointage GAF (2025-2028)"
+    },
+    "howToRegister": {
+      "question": "Comment m'inscrire?",
+      "text": "Les inscriptions s'ouvrent sur la plateforme Gym Art Meets 4 mois avant chaque événement. Les équipes s'inscrivent ensemble, en listant tous les gymnastes et entraîneurs."
+    },
+    "registrationCost": {
+      "question": "Combien coûte l'inscription?",
+      "answer": "250 $ CAD par gymnaste, 150 $ CAD par entraîneur. Des rabais de prévente et des prix dynamiques peuvent s'appliquer selon la demande."
+    },
+    "howTeamsWork": {
+      "question": "Comment fonctionnent les équipes?",
+      "p1": "Les équipes doivent avoir un minimum de 3 gymnastes sans taille maximale. Les équipes peuvent être toutes femmes, tous hommes ou n'importe quel mélange. Les gymnastes de différents clubs peuvent former des équipes ensemble—il n'y a pas de restrictions de club ou de fédération.",
+      "nationalTeamLimit": {
+        "title": "LIMITE D'ÉQUIPE NATIONALE",
+        "text": "Pour éviter les \"super équipes\" dans les premières saisons, chaque équipe ne peut inclure que",
+        "highlight": "un membre actuel de l'équipe nationale",
+        "suffix": "Cela assure un équilibre compétitif et donne à toutes les équipes une chance équitable."
+      }
+    },
+    "apparatuses": {
+      "question": "Quels agrès sont utilisés?",
+      "wag": "GAF (4 événements):",
+      "wagList": "Saut, Barres asymétriques, Poutre, Sol",
+      "mag": "GAM (4 événements):",
+      "magList": "Saut, Sol, Anneaux, Barre fixe",
+      "mixed": "Les équipes mixtes peuvent utiliser n'importe quelle combinaison de ces 8 agrès.",
+      "whyNoPommel": {
+        "title": "POURQUOI PAS DE CHEVAL D'ARÇONS OU DE BARRES PARALLÈLES?",
+        "p1": "Nous avons rationalisé les agrès masculins à 4 événements pour correspondre à la gymnastique féminine.",
+        "pommelHorse": "Cheval d'arçons",
+        "p1Suffix": "a été retiré car c'est souvent l'événement le plus difficile pour les gymnastes et sujet aux chutes.",
+        "parallelBars": "Barres parallèles",
+        "p2": "a été retiré car les routines prennent le plus de temps—et nous nous concentrons sur une expérience spectateur pleine d'action.",
+        "p3": "Nous avons gardé",
+        "stillRings": "Anneaux",
+        "stillRingsNote": "(événement de force emblématique),",
+        "highBar": "Barre fixe",
+        "highBarNote": "(sorties et réceptions spectaculaires), plus Saut et Sol (partagés avec les femmes)."
+      }
+    },
+    "apparelRequirements": {
+      "question": "Quelles sont les exigences vestimentaires?",
+      "answer": "Aucune exigence de justaucorps. Les équipes doivent avoir 2 couleurs principales d'équipe et porter des tenues assorties et non amples. Exprimez l'identité de votre équipe comme vous le souhaitez—il s'agit de divertissement et d'esprit d'équipe."
+    },
+    "clubOrFederation": {
+      "question": "Dois-je faire partie d'un club ou d'une fédération?",
+      "answer": "Non. Battle Royale est ouvert à tous les gymnastes éligibles, indépendamment de l'affiliation à un club ou de l'adhésion à une fédération. Vous pouvez compétir en tant qu'athlète indépendant dans n'importe quelle équipe."
+    },
+    "multipleTeams": {
+      "question": "Puis-je compétir dans plusieurs équipes?",
+      "answer": "Non. Chaque gymnaste ne peut compétir que dans une seule équipe par événement."
+    },
+    "whatRoutines": {
+      "question": "Quelles routines dois-je préparer?",
+      "answer": "Préparez vos routines de niveau FIG existantes. Aucun changement nécessaire. Vous serez jugé en utilisant le Code de Pointage FIG standard, puis les résultats sont normalisés pour une comparaison équitable."
+    },
+    "scoreNormalization": {
+      "question": "Comment fonctionne la normalisation des résultats?",
+      "text": "Votre résultat FIG standard est mis à l'échelle en fonction de la valeur de départ la plus élevée possible pour cet agrès, résultant en un résultat final sur 10. Cela rend les résultats instantanément compréhensibles et permet une comparaison équitable entre tous les agrès (poutre vs barre fixe, GAF vs GAM)."
+    },
+    "competitionStructure": {
+      "question": "Comment est structurée la compétition?",
+      "p1": "Format d'élimination d'une journée:",
+      "qualification": "Qualification",
+      "qualificationTime": "(9h00 - 15h00, 64 équipes, 8 routines chacune)",
+      "semiFinals": "Demi-finales",
+      "semiFinalsTime": "(18h00 - 19h30, top 12 équipes, 6 routines chacune)",
+      "finals": "Finales",
+      "finalsTime": "(20h00 - 20h30, top 4 équipes, 4 routines chacune). Le résultat total le plus élevé gagne.",
+      "p2": "La qualification consiste en quatre rondes de 80 minutes. Tous les résultats de routine comptent pour le total de votre équipe. Chaque équipe ne peut effectuer que 2 routines par agrès.",
+      "appointmentScheduling": {
+        "title": "PLANIFICATION PAR RENDEZ-VOUS",
+        "text": "Contrairement aux compétitions traditionnelles basées sur la rotation, Battle Royale utilise une planification par rendez-vous. Chaque athlète reçoit un créneau horaire spécifique pour sa routine (par ex., \"Athlète A: Barres asymétriques à 9h05\"). Plusieurs athlètes peuvent compétir simultanément sur différents agrès. Les horaires détaillés sont publiés près de l'événement."
+      }
+    },
+    "howManyRoutines": {
+      "question": "Combien de routines mon équipe effectue-t-elle?",
+      "answer": "Qualification: 8 routines (max 2 par agrès). Demi-finales: 6 routines (max 2 par agrès, 1 saut). Finales: 4 routines (max 2 par agrès)."
+    },
+    "whatHappensIfFall": {
+      "question": "Que se passe-t-il si je tombe pendant une routine?",
+      "answer": "Les chutes sont déduites selon les règles FIG standard. En demi-finales et finales, chaque athlète a 120 secondes pour terminer sa routine—aucun temps supplémentaire n'est accordé pour les chutes. Les habiletés exécutées après la limite de temps ne comptent pas."
+    },
+    "timeLimit": {
+      "question": "Quelle est la limite de temps par routine?",
+      "p1": "Les limites de temps FIG standard s'appliquent pendant la qualification. En demi-finales et finales, il y a une limite stricte de 120 secondes par routine sans prolongation.",
+      "p2": "Rappelez-vous: Battle Royale utilise une planification par rendez-vous, pas des rotations. Vous saurez exactement quand vous compétissez—consultez la",
+      "schedulePage": "page d'horaire",
+      "p2Suffix": "pour les dates des événements."
+    },
+    "prizesDistributed": {
+      "question": "Comment les prix sont-ils distribués?",
+      "answer": "L'argent des prix va à l'équipe. La façon dont les équipes divisent les gains en interne leur appartient. 1er: 15 000 $ CAD, 2e: 7 500 $ CAD, 3e: 2 500 $ CAD. Les équipes 4e à 8e reçoivent des prix de marchandise."
+    }
+  },
+  "coaches": {
+    "registerAthletes": {
+      "question": "Comment inscrire mes athlètes?",
+      "p1": "Inscrivez votre équipe via la plateforme Gym Art Meets lorsque les inscriptions s'ouvrent. Vous aurez besoin de:",
+      "fullName": "Nom complet",
+      "fullNameSuffix": "pour chaque athlète",
+      "teamName": "Nom de l'équipe",
+      "teamColors": "couleurs/marque de l'équipe",
+      "registrationFees": "Frais d'inscription",
+      "registrationFeesSuffix": "(250 $ CAD par gymnaste, 150 $ CAD par entraîneur)",
+      "paymentVia": "Paiement via",
+      "creditCard": "carte de crédit",
+      "or": "ou",
+      "bankTransfer": "virement bancaire",
+      "registrationOpens": "Les inscriptions s'ouvrent:",
+      "br1": "BR 1 (juillet 2026), BR 2 (août 2026), BR 3 (novembre 2026), BR 4 (janvier 2027)",
+      "viewSchedule": "Voir l'horaire complet →"
+    },
+    "coachFee": {
+      "question": "Quel est le frais d'inscription pour les entraîneurs?",
+      "answer": "150 $ CAD par entraîneur. Chaque équipe devrait avoir au moins un entraîneur inscrit pour l'accès au sol et le soutien des athlètes."
+    },
+    "multipleTeams": {
+      "question": "Puis-je entraîner plusieurs équipes?",
+      "answer": "Oui, les entraîneurs peuvent être inscrits avec plusieurs équipes au même événement, bien que les conflits d'horaire pendant la compétition soient de votre responsabilité à gérer."
+    },
+    "roleDuringCompetition": {
+      "question": "Quel est mon rôle pendant la compétition?",
+      "answer": "Les entraîneurs ont accès au sol pour soutenir leurs athlètes, similaire aux compétitions traditionnelles. Vous aiderez aux échauffements, fournirez un parage là où c'est permis, et soutiendrez les athlètes entre les routines."
+    },
+    "certifications": {
+      "question": "Ai-je besoin de certifications spécifiques?",
+      "answer": "Bien que les exigences de certification spécifiques soient en cours de finalisation, nous recommandons que les entraîneurs aient des qualifications standard d'entraînement en gymnastique (NCCP, USAG ou équivalent). Des certifications de sécurité peuvent être requises pour le parage."
+    },
+    "warmUps": {
+      "question": "Comment fonctionnent les échauffements?",
+      "answer": "Les équipes auront des heures d'échauffement programmées avant leurs rondes de compétition. Les horaires d'échauffement détaillés seront fournis plus près de chaque événement. Le format d'une journée signifie des rotations d'échauffement efficaces."
+    }
+  },
+  "judges": {
+    "judgingStructure": {
+      "question": "Comment le jugement est-il structuré?",
+      "p1": "Dans la ronde de qualification, nous utilisons",
+      "twoPanels": "deux panels par événement",
+      "p1Suffix": ", chaque panel consistant en",
+      "oneJudge": "un juge",
+      "p1Suffix2": "qui évalue à la fois la Difficulté et l'Exécution pour une vitesse maximale.",
+      "p2": "Le système fonctionne ainsi: Un gymnaste compétit, et au moment où il termine, le premier panel commence à le juger. Pendant que le premier panel juge, le gymnaste suivant compétit pendant que le deuxième panel le juge. Quand ils terminent, les panels échangent. Cela signifie qu'il y a toujours quelqu'un qui compétit à tout moment—nous devons respecter des contraintes de temps strictes.",
+      "p3": "Nous sélectionnons uniquement les meilleurs juges: ceux qui sont rapides, précis et impartiaux. Cette approche rationalisée assure une action constante tout en maintenant les normes de jugement les plus élevées."
+    },
+    "codeOfPoints": {
+      "question": "Quel code de pointage est utilisé?",
+      "p1": "Code de Pointage FIG (cycle actuel). Les juges utilisent les mêmes déductions, valeurs de difficulté et normes d'exécution sur lesquels ils sont déjà formés.",
+      "magCop": "Code de Pointage GAM 2025-2028",
+      "wagCop": "Code de Pointage GAF 2025-2028"
+    },
+    "scoreNormalizationAffect": {
+      "question": "Comment la normalisation des résultats affecte-t-elle le jugement?",
+      "text": "Cela n'affecte pas du tout votre jugement. Vous jugez les routines normalement en utilisant les normes FIG. Le calcul de normalisation se produit après que vous soumettiez vos résultats—c'est une transformation mathématique appliquée pour rendre les résultats comparables entre les agrès."
+    },
+    "submitScores": {
+      "question": "Comment les juges soumettent-ils les résultats?",
+      "p1": "Les juges soumettent les résultats en utilisant l'application",
+      "judgesCompanion": "Judges Companion",
+      "p1Suffix": ", une application d'aide intégrée à Gym Art Meets. C'est notre application interne conçue pour une vitesse maximale et une utilisation super facile.",
+      "p2": "Vous entrez simplement un résultat FIG, et la normalisation des résultats se produit automatiquement en arrière-plan. Sur le tableau de bord, les spectateurs voient le résultat normalisé sur 10—tout fait de manière transparente sans changer votre processus de jugement."
+    },
+    "assignedApparatus": {
+      "question": "Les juges sont-ils assignés à des agrès spécifiques?",
+      "answer": "Oui, les juges sont assignés à des agrès spécifiques en fonction de leurs certifications et de leur expertise, similaire aux compétitions FIG traditionnelles."
+    },
+    "getInvolved": {
+      "question": "Comment puis-je m'impliquer en tant que juge?",
+      "text": "Nous recrutons activement des juges FIG certifiés (brevet ou niveau national). Contactez-nous à",
+      "suffix": "avec vos qualifications et disponibilité."
+    }
+  },
+  "spectators": {
+    "buyTickets": {
+      "question": "Comment acheter des billets?",
+      "text": "Les billets sont en vente 2 mois avant chaque événement via notre site web et la plateforme Gym Art."
+    },
+    "ticketPrices": {
+      "question": "Combien coûtent les billets?",
+      "answer": "Admission générale: 30 $ CAD. Sièges courtside/VIP: 150 $ CAD. Les prix peuvent varier pour les événements spéciaux."
+    },
+    "vipTickets": {
+      "question": "Que sont les billets VIP/courtside?",
+      "p1": "Les billets VIP/courtside (150 $ CAD) offrent quelque chose qui n'a jamais été fait auparavant en gymnastique. Les VIP s'assoient du",
+      "sameViewpoint": "même point de vue que les juges",
+      "p1Suffix": "—littéralement",
+      "distance": "2-3 mètres de l'agrès",
+      "p2": "Vous vivrez le sport aux côtés des gymnastes en temps réel, ressentant chaque réception, entendant chaque respiration, voyant chaque détail de près. C'est une expérience immersive qui vous époustouflera.",
+      "p3": "Parfait pour les fans sérieux de gymnastique, les photographes et quiconque veut la vue la plus intime de la compétition d'élite."
+    },
+    "eventLength": {
+      "question": "Combien de temps dure l'événement?",
+      "answer": "La journée complète se déroule de 9h00 à environ 20h30. Les qualifications du matin (9h - 15h) et les finales du soir (18h - 20h30) peuvent être assistées séparément ou ensemble."
+    },
+    "eventSchedule": {
+      "question": "Quel est l'horaire de l'événement?",
+      "answer": "Matin (9h - 15h): Quatre rondes de qualification avec 64 équipes. Soir (18h - 20h30): Demi-finales (12 équipes) et Finales (4 équipes). La session du soir est le spectacle principal avec des enjeux plus élevés."
+    },
+    "watchOnline": {
+      "question": "Puis-je regarder en ligne?",
+      "answer": "Oui. Les vidéos des événements seront publiées sur l'application Gym Art. Les options de diffusion en direct sont en développement. Le visionnement en ligne peut avoir un petit frais (8 $ CAD)."
+    },
+    "foodAndDrink": {
+      "question": "Y a-t-il de la nourriture et des boissons disponibles?",
+      "answer": "Dépend du lieu. La plupart des lieux auront des concessions disponibles. Les détails seront fournis pour chaque lieu d'événement spécifique."
+    },
+    "familyFriendly": {
+      "question": "Les événements sont-ils adaptés aux familles?",
+      "answer": "Absolument. Battle Royale est conçu pour tous les âges. Le format d'équipe et la notation claire le rendent parfait pour initier les enfants à la gymnastique compétitive dans un environnement excitant."
+    }
+  },
+  "sponsors": {
+    "sponsorshipOpportunities": {
+      "question": "Quelles opportunités de commandite existent?",
+      "answer": "Trois niveaux principaux: Partenaires de prix en argent (soutenir les récompenses des athlètes), Partenaires de marchandise et vêtements (habiller la compétition), et Partenaires d'équipement et services (fournir équipement, technologie ou services)."
+    },
+    "whatSponsorsReceive": {
+      "question": "Que reçoivent les commanditaires?",
+      "answer": "Visibilité le jour de l'événement (placement de logo, annonces, zones de marque), présence numérique (site web, médias sociaux, intégration de diffusion en direct), accès direct à la communauté de gymnastique via la plateforme Gym Art, hospitalité (accès VIP, rencontres avec les athlètes), et options d'exclusivité de catégorie."
+    },
+    "becomeSponsor": {
+      "question": "Comment devenir commanditaire?",
+      "text": "Contactez-nous à",
+      "suffix": "pour discuter des opportunités de partenariat. Nous travaillerons avec vous pour créer un forfait qui répond à vos objectifs."
+    },
+    "reachAudience": {
+      "question": "Quelle est la portée/audience?",
+      "answer": "La gymnastique a atteint 41,5 millions de téléspectateurs à Paris 2024 (sport olympique le plus regardé). Notre marché régional comprend 23 000+ gymnastes compétitifs et 250 000+ membres d'audience accessibles (parents, athlètes récréatifs, entraîneurs) en Ontario, au Québec et NY/NJ."
+    }
+  },
+  "format": {
+    "eliminationFormat": {
+      "question": "Comment fonctionne le format d'élimination?",
+      "qualification": {
+        "title": "QUALIFICATION (9h00 → 15h00)",
+        "fourRounds": "quatre rondes de qualification",
+        "fourRoundsSuffix": "le matin, chacune d'une durée de",
+        "eightyMinutes": "80 minutes",
+        "eightRoutines": "8 routines",
+        "allScoresCount": "Tous les résultats comptent",
+        "allScoresCountSuffix": "pour le résultat de l'équipe",
+        "twoRoutinesPerApparatus": "2 routines par agrès"
+      },
+      "semiFinals": {
+        "title": "DEMI-FINALES (18h00 → 19h30)",
+        "topTwelve": "top 12 équipes",
+        "topTwelveSuffix": "de la Qualification avancent en demi-finale",
+        "sixRoutines": "6 routines",
+        "sixRoutinesSuffix": ", toutes comptent",
+        "twoRoutinesAndVault": "2 routines par agrès et un saut",
+        "oneHundredTwentySeconds": "120 secondes",
+        "oneHundredTwentySecondsSuffix": "pour terminer leur routine (aucun temps supplémentaire avec chutes), après quoi aucune habileté n'est comptée"
+      },
+      "finals": {
+        "title": "FINALES (20h00 → 20h30)",
+        "finalFour": "4 équipes finales",
+        "finalFourSuffix": "se rassemblent au milieu de l'aréna",
+        "fourRoutines": "4 routines",
+        "fourRoutinesSuffix": ", toutes comptent",
+        "oneAthleteAtTime": "Un athlète compétit à la fois",
+        "oneAthleteAtTimeSuffix": ", en commençant par l'Équipe 1, puis l'Équipe 2, etc.",
+        "twoRoutinesPerApparatus": "2 routines par agrès"
+      }
+    },
+    "scoreNormalization": {
+      "question": "Qu'est-ce que la normalisation des résultats?",
+      "text": "Une transformation mathématique qui met à l'échelle les résultats FIG en fonction de la valeur de départ la plus élevée possible pour chaque agrès, résultant en résultats sur 10. Cela permet une comparaison directe entre tous les agrès et entre les routines GAF et GAM."
+    },
+    "teamsRanked": {
+      "question": "Comment les équipes sont-elles classées?",
+      "answer": "Les équipes sont classées par résultat total d'équipe dans chaque ronde. Tous les résultats de routine comptent—il n'y a pas de résultats abandonnés. L'équipe avec le total le plus élevé à la fin de chaque ronde avance."
+    },
+    "wagAndMagTogether": {
+      "question": "GAF et GAM peuvent-ils compétir ensemble?",
+      "answer": "Oui! C'est l'une des innovations de Battle Royale. La normalisation des résultats rend équitable la compétition des femmes et des hommes dans la même équipe, comparant la poutre à la barre fixe, le sol féminin au sol masculin, etc."
+    },
+    "tiesBroken": {
+      "question": "Comment les égalités sont-elles brisées?",
+      "p1": "Nous suivons les",
+      "figRegulations": "règlements FIG",
+      "p1Suffix": "pour briser les égalités:",
+      "first": "D'abord, comparer les",
+      "executionScores": "résultats d'exécution",
+      "then": "Ensuite, comparer les",
+      "difficultyScores": "résultats de difficulté",
+      "deathMatch": {
+        "title": "MATCH À MORT",
+        "text": "Si c'est encore une égalité réelle, nous passons à un",
+        "deathMatchHighlight": "match à mort",
+        "text2": ": les deux équipes envoient",
+        "oneAthlete": "un athlète",
+        "oneAthleteSuffix": "(ou deux) pour exécuter des routines. La somme de ces routines détermine le gagnant final."
+      }
+    },
+    "appointmentScheduling": {
+      "question": "Qu'est-ce que la planification par rendez-vous?",
+      "p1": "Contrairement aux compétitions traditionnelles où les équipes tournent ensemble à travers les agrès, Battle Royale utilise une",
+      "appointmentBased": "planification par rendez-vous",
+      "p2": "Chaque athlète reçoit un temps spécifique pour sa routine. Par exemple: \"Athlète A - Barres asymétriques à 9h05, Athlète B - Saut à 9h10.\" Plusieurs athlètes peuvent compétir simultanément sur différents agrès.",
+      "p3": "Cela crée une expérience de visionnement plus dynamique et pleine d'action avec une activité constante sur le sol de compétition."
+    }
+  },
+  "logistics": {
+    "season1Location": {
+      "question": "Où se trouvent les événements de la Saison 1?",
+      "answer": "Tous les événements de la Saison 1 sont en Ontario et au Québec, Canada. Les lieux spécifiques seront annoncés au fur et à mesure de leur confirmation. Nous ciblons des lieux avec une bonne capacité de spectateurs et un équipement de gymnastique professionnel."
+    },
+    "proofOfConcept": {
+      "question": "Qu'est-ce que l'événement de preuve de concept?",
+      "answer": "Un événement de démonstration à capacité limitée le 21 juin 2026, avant le lancement officiel de la Saison 1. C'est notre événement inaugural pour démontrer le format et créer de l'excitation. Détails à déterminer."
+    },
+    "registrationOpens": {
+      "question": "Quand les inscriptions s'ouvrent-elles?",
+      "text": "Les inscriptions s'ouvrent 4 mois avant chaque événement: BR 1 (juillet 2026), BR 2 (août 2026), BR 3 (novembre 2026), BR 4 (janvier 2027)."
+    },
+    "ticketsOnSale": {
+      "question": "Quand les billets sont-ils en vente?",
+      "text": "Les billets de spectateur sont en vente 2 mois avant chaque événement: BR 1 (septembre 2026), BR 2 (novembre 2026), BR 3 (janvier 2027), BR 4 (avril 2027)."
+    },
+    "eventCancelled": {
+      "question": "Que se passe-t-il si un événement est annulé?",
+      "answer": "En cas d'annulation peu probable, des remboursements complets seront fournis pour les inscriptions et les achats de billets. Nous avons des plans de lieux de secours et une planification flexible (contrairement aux événements de fédération verrouillés à des dates spécifiques)."
+    },
+    "stayUpdated": {
+      "question": "Comment rester informé?",
+      "text": "Inscrivez-vous à notre liste de diffusion sur ce site web, suivez-nous sur",
+      "suffix": ". Nous annoncerons les ouvertures d'inscription, les ventes de billets et les détails des événements via tous les canaux."
+    }
+  }
+}

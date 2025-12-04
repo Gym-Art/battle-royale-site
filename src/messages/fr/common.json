@@ -1,0 +1,40 @@
+{
+    "common": {
+        "siteName": "Bataille Royale",
+        "tagline": "Batailles de gymnastique style pro. Public en direct. Enjeux réels.",
+        "jumpToSection": "ALLER À LA SECTION",
+        "home": "Accueil"
+    },
+    "nav": {
+        "home": "Accueil",
+        "rules": "Format et Règles",
+        "schedule": "Calendrier",
+        "sponsors": "Commanditaires",
+        "faq": "FAQ",
+        "about": "À propos"
+    },
+    "footer": {
+        "gymArt": {
+            "heading": "GYM ART",
+            "learnMore": "En savoir plus sur Gym Art"
+        },
+        "contact": {
+            "heading": "CONTACT"
+        },
+        "social": {
+            "heading": "SUIVEZ-NOUS"
+        },
+        "copyright": "© {year} Gym Art Inc. Tous droits réservés.",
+        "version": "Version {version}"
+    },
+    "ageCalculator": {
+        "title": "CALCULATEUR D'ÂGE",
+        "birthdateLabel": "Votre date de naissance",
+        "eventLabel": "Événement",
+        "ageOnEventDay": "Vous aurez",
+        "yearsOld": "ans",
+        "onEventDay": "le jour de l'événement.",
+        "eligible": "✓ Vous respectez l'exigence d'âge!",
+        "notEligible": "✗ Vous devez avoir au moins 16 ans le jour de l'événement."
+    }
+}

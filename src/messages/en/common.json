@@ -1,0 +1,40 @@
+{
+    "common": {
+        "siteName": "Battle Royale",
+        "tagline": "Pro-style gymnastics battles. Live crowd. Real stakes.",
+        "jumpToSection": "JUMP TO SECTION",
+        "home": "Home"
+    },
+    "nav": {
+        "home": "Home",
+        "rules": "Format & Rules",
+        "schedule": "Schedule",
+        "sponsors": "Sponsors",
+        "faq": "FAQ",
+        "about": "About"
+    },
+    "footer": {
+        "gymArt": {
+            "heading": "GYM ART",
+            "learnMore": "Learn more about Gym Art"
+        },
+        "contact": {
+            "heading": "CONTACT"
+        },
+        "social": {
+            "heading": "FOLLOW US"
+        },
+        "copyright": "© {year} Gym Art Inc. All rights reserved.",
+        "version": "Version {version}"
+    },
+    "ageCalculator": {
+        "title": "AGE CALCULATOR",
+        "birthdateLabel": "Your birthdate",
+        "eventLabel": "Event",
+        "ageOnEventDay": "You will be",
+        "yearsOld": "years old",
+        "onEventDay": "on event day.",
+        "eligible": "✓ You meet the age requirement!",
+        "notEligible": "✗ You must be at least 16 years old on event day."
+    }
+}

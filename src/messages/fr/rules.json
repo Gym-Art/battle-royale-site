@@ -1,0 +1,269 @@
+{
+    "hero": {
+        "label": "Format de compétition",
+        "heading": "FORMAT & RÈGLES",
+        "description": "Tout ce que vous devez savoir sur le fonctionnement de Battaille Royale—de la composition des équipes à la normalisation des notes."
+    },
+    "navigation": {
+        "fundamentals": "Fondamentaux",
+        "teamComposition": "Composition d'équipe",
+        "apparatus": "Agrès",
+        "scoreNormalization": "Normalisation des notes",
+        "judging": "Jugement et notation",
+        "competitionFlow": "Déroulement de la compétition",
+        "registration": "Inscription",
+        "prizes": "Prix"
+    },
+    "fundamentals": {
+        "heading": "LES FONDAMENTAUX",
+        "cards": {
+            "cashPrizes": {
+                "title": "Prix en argent",
+                "description": "25 000 $ par événement. 100 000 $ au total la première année. 1er: 15 000 $. 2e: 7 500 $. 3e: 2 500 $. Les équipes 4e–8e reçoivent des prix de marchandise."
+            },
+            "mixedTeams": {
+                "title": "Équipes mixtes",
+                "description": "64 places d'équipe par événement. Minimum 3 gymnastes, pas de maximum. Les équipes peuvent être toutes femmes, tous hommes, ou n'importe quel mélange."
+            },
+            "invitational": {
+                "title": "Invitation ouverte",
+                "description": "Ouvert à tous les gymnastes de 16 ans et plus qui peuvent exécuter des routines de niveau FIG. Aucune restriction de fédération ou exigence de qualification."
+            },
+            "fourEvents": {
+                "title": "4 événements par année",
+                "description": "La première année se déroule de nov. 2026 à juin 2027. Chaque événement dure un jour: qualification, demi-finale et finale."
+            },
+            "eliminationFormat": {
+                "title": "Format d'élimination",
+                "description": "64 équipes se qualifient, 12 passent aux demi-finales, 4 atteignent les finales. Progressivement moins de routines avec des enjeux plus élevés."
+            },
+            "figJudging": {
+                "title": "Jugement FIG",
+                "description": "Mêmes routines. Mêmes critères de jugement. Mêmes règles FIG. Juste des résultats normalisés pour une comparaison équitable entre agrès."
+            }
+        }
+    },
+    "teamComposition": {
+        "heading": "COMPOSITION D'ÉQUIPE & ADMISSIBILITÉ",
+        "subheading": "Qui peut compétir et comment les équipes sont formées.",
+        "ageRequirements": {
+            "title": "EXIGENCES D'ÂGE",
+            "description": "Les athlètes doivent avoir au moins <strong>16 ans</strong> le jour de l'événement. Il n'y a pas de limite d'âge supérieure."
+        },
+        "skillLevel": {
+            "title": "NIVEAU DE COMPÉTENCE",
+            "description": "Les athlètes doivent être capables d'exécuter des <strong>routines de niveau Senior FIG</strong>. Cela signifie généralement des gymnastes de niveau compétitif 10, Élite ou NCAA pour GAF, et niveau 10 ou Élite pour GAM.",
+            "routineNote": "Une routine FIG consiste en 6-8 éléments du Code de Pointage FIG.",
+            "magCop": "Code de Pointage GAM (2025-2028)",
+            "wagCop": "Code de Pointage GAF (2025-2028)"
+        },
+        "teamComposition": {
+            "title": "COMPOSITION D'ÉQUIPE",
+            "items": [
+                "<strong>Minimum 3 gymnastes</strong>, pas de taille maximale",
+                "Les équipes peuvent être toutes femmes, tous hommes, ou n'importe quel mélange",
+                "Les gymnastes de différents clubs peuvent former des équipes ensemble—aucune restriction de club ou de fédération",
+                "Aucune adhésion à une fédération requise",
+                "Chaque gymnaste ne peut compétir que sur <strong>une équipe par événement</strong>"
+            ]
+        },
+        "nationalTeamLimit": {
+            "title": "LIMITE D'ÉQUIPE NATIONALE",
+            "description": "Pour éviter les \"super équipes\" dans les premières saisons, chaque équipe ne peut inclure qu'<strong>un membre actuel de l'équipe nationale</strong>. Cela assure l'équilibre compétitif et donne à toutes les équipes une chance équitable."
+        },
+        "apparelRequirements": {
+            "title": "EXIGENCES DE TENUE",
+            "description": "<strong>Aucune exigence de justaucorps.</strong> Les équipes doivent avoir <strong>2 couleurs principales d'équipe</strong> et porter des tenues assorties et non amples. Exprimez l'identité de votre équipe comme vous le souhaitez—il s'agit de divertissement et d'esprit d'équipe."
+        }
+    },
+    "apparatus": {
+        "heading": "AGRÈS",
+        "description": "Les événements qui composent la compétition Battaille Royale.",
+        "wag": {
+            "title": "GAF (4 ÉVÉNEMENTS)",
+            "apparatus": {
+                "vault": "Saut",
+                "unevenBars": "Barres asymétriques",
+                "balanceBeam": "Poutre",
+                "floorExercise": "Sol"
+            }
+        },
+        "mag": {
+            "title": "GAM (4 ÉVÉNEMENTS)",
+            "apparatus": {
+                "vault": "Saut",
+                "floorExercise": "Sol",
+                "stillRings": "Anneaux",
+                "highBar": "Barre fixe"
+            }
+        },
+        "mixedTeams": "Les équipes mixtes peuvent utiliser n'importe quelle combinaison de ces <strong>8 agrès</strong>.",
+        "whyNoPommel": {
+            "title": "POURQUOI PAS DE CHEVAL D'ARRÊTS OU DE BARRES PARALLÈLES?",
+            "description": "Nous avons rationalisé les agrès masculins à 4 événements pour correspondre à la gymnastique féminine. Le <strong>Cheval d'arêts</strong> a été retiré car c'est souvent l'événement le plus difficile pour les gymnastes et sujet aux chutes. Les <strong>Barres parallèles</strong> ont été retirées car les routines prennent le plus de temps—et nous nous concentrons sur une expérience spectaculaire riche en action.",
+            "kept": "Nous avons gardé les <strong>Anneaux</strong> (événement de force emblématique), la <strong>Barre fixe</strong> (lâchers et sorties spectaculaires), plus le Saut et le Sol (partagés avec les femmes)."
+        }
+    },
+    "scoreNormalization": {
+        "heading": "NORMALISATION DES NOTES",
+        "description": "La percée qui rend Battaille Royale possible.",
+        "problem": {
+            "title": "LE PROBLÈME",
+            "description": "Dans la gymnastique FIG traditionnelle, différents agrès ont différents résultats maximum basés sur la difficulté des habiletés disponibles. Un 15,5 au saut signifie quelque chose de différent qu'un 15,5 à la poutre. Cela rend impossible de:",
+            "items": [
+                "Comparer les routines entre différents agrès",
+                "Comparer directement les résultats GAF (féminins) et GAM (masculins)",
+                "Créer des équipes mixtes qui compétissent équitablement",
+                "Aider les téléspectateurs occasionnels à comprendre qui gagne"
+            ]
+        },
+        "solution": {
+            "title": "LA SOLUTION",
+            "description": "<strong>Normalisation des résultats:</strong> Nous prenons le résultat FIG standard et le mettons à l'échelle basé sur la valeur de départ la plus élevée possible pour cet agrès. Le résultat est un résultat final sur 10.",
+            "example": "Cela signifie qu'un <strong>9,2 à la poutre</strong> peut être directement comparé à un <strong>9,2 à la barre fixe</strong>. Les spectateurs comprennent instantanément la qualité de chaque routine. Les équipes mixtes GAF/GAM deviennent possibles et équitables."
+        },
+        "whatStaysSame": {
+            "title": "CE QUI RESTE LE MÊME",
+            "items": [
+                "Les athlètes exécutent leurs routines FIG existantes—aucun changement requis",
+                "Les juges utilisent le Code de Pointage FIG standard",
+                "Les résultats de Difficulté (D) et d'Exécution (E) fonctionnent de la même manière",
+                "Les déductions pour chutes, erreurs et exécution restent inchangées"
+            ]
+        }
+    },
+    "judging": {
+        "heading": "JUGEMENT & NOTATION",
+        "description": "Comment les routines sont évaluées et les résultats calculés.",
+        "structure": {
+            "title": "STRUCTURE DE JUGEMENT",
+            "description": "Au tour de qualification, nous utilisons <strong>deux panels par événement</strong>, chaque panel consistant en <strong>un juge</strong> qui évalue à la fois la Difficulté et l'Exécution pour une vitesse maximale.",
+            "system": "Le système fonctionne ainsi: Un gymnaste compétit, et au moment où il termine, le premier panel commence à le juger. Pendant que le premier panel juge, le gymnaste suivant compétit pendant que le deuxième panel le juge. Quand ils terminent, les panels échangent. Cela signifie qu'il y a toujours quelqu'un qui compétit à tout moment—nous devons respecter des contraintes de temps strictes.",
+            "judges": "Nous ne sélectionnons que les meilleurs des meilleurs juges: ceux qui sont rapides, précis et impartiaux. Cette approche rationalisée assure une action constante tout en maintenant les normes de jugement les plus élevées."
+        },
+        "codeOfPoints": {
+            "title": "CODE DE POINTAGE",
+            "description": "Les juges utilisent le <strong>Code de Pointage FIG</strong> (cycle actuel). Les juges utilisent les mêmes déductions, valeurs de difficulté et normes d'exécution sur lesquelles ils sont déjà formés.",
+            "normalization": "La normalisation des résultats n'affecte pas du tout le jugement. Les juges jugent les routines normalement en utilisant les normes FIG. Le calcul de normalisation se produit après que les résultats sont soumis—c'est une transformation mathématique appliquée pour rendre les résultats comparables entre agrès."
+        },
+        "scoreSubmission": {
+            "title": "SOUMISSION DES RÉSULTATS",
+            "description": "Les juges soumettent les résultats en utilisant l'<strong>application Judges Companion</strong>, une application d'aide intégrée à Gym Art Meets. C'est notre application interne conçue pour une vitesse maximale et une utilisation super facile.",
+            "process": "Vous entrez simplement un résultat FIG, et la normalisation des résultats se produit automatiquement en arrière-plan. Sur le tableau de bord, les spectateurs voient le résultat normalisé sur 10—tout fait de manière transparente sans changer votre processus de jugement."
+        }
+    },
+    "competitionFlow": {
+        "heading": "DÉROULEMENT DE LA COMPÉTITION",
+        "qualification": {
+            "title": "QUALIFICATION",
+            "time": "9h00 – 15h00",
+            "items": [
+                "Quatre rondes de qualification, chacune d'une durée de 80 minutes",
+                "Chaque équipe exécute <strong>8 routines</strong>",
+                "Tous les résultats comptent pour le total de l'équipe",
+                "Maximum 2 routines par agrès",
+                "<strong>Les 12 meilleures équipes passent</strong> aux demi-finales"
+            ]
+        },
+        "semiFinals": {
+            "title": "DEMI-FINALES",
+            "time": "18h00 – 19h30",
+            "items": [
+                "12 équipes compétissent",
+                "Chaque équipe exécute <strong>6 routines</strong>",
+                "Tous les résultats comptent",
+                "Maximum 2 routines par agrès, 1 saut",
+                "Limite de temps de 120 secondes par routine (pas de temps supplémentaire pour les chutes)",
+                "<strong>Les 4 meilleures équipes passent</strong> aux finales"
+            ]
+        },
+        "finals": {
+            "title": "FINALES",
+            "time": "20h00 – 20h30",
+            "items": [
+                "4 équipes se rassemblent au centre de l'aréna",
+                "Chaque équipe exécute <strong>4 routines</strong>",
+                "Tous les résultats comptent",
+                "Un athlète compétit à la fois, en rotation entre les équipes",
+                "Maximum 2 routines par agrès",
+                "<strong>Le résultat total le plus élevé gagne 15 000 $</strong>"
+            ]
+        },
+        "appointmentScheduling": {
+            "title": "HORAIRE BASÉ SUR RENDEZ-VOUS",
+            "description": "Contrairement aux compétitions traditionnelles où les équipes tournent ensemble à travers les agrès, Battaille Royale utilise un <strong>horaire basé sur rendez-vous</strong>.",
+            "example": "Chaque athlète reçoit un temps spécifique pour sa routine. Par exemple: \"Athlète A - Barres asymétriques à 9h05, Athlète B - Saut à 9h10.\" Plusieurs athlètes peuvent compétir simultanément sur différents agrès.",
+            "benefit": "Cela crée une expérience de visionnement plus dynamique et riche en action avec une activité constante sur le sol de compétition. Les horaires détaillés sont publiés près de chaque événement."
+        },
+        "timeLimits": {
+            "title": "LIMITES DE TEMPS & CHUTES",
+            "qualification": "<strong>Qualification:</strong> Les limites de temps FIG standard s'appliquent.",
+            "semiFinalsFinals": "<strong>Demi-finales & Finales:</strong> Il y a une <strong>limite stricte de 120 secondes</strong> par routine sans prolongations.",
+            "falls": "Les chutes sont déduites selon les règles FIG standard. Les habiletés exécutées après la limite de temps ne comptent pas."
+        },
+        "tieBreaking": {
+            "title": "RÈGLES DE DÉPARTAGE",
+            "description": "Nous suivons les <strong>règlements FIG</strong> pour départager les égalités:",
+            "items": [
+                "D'abord, comparer les <strong>résultats d'exécution</strong>",
+                "Ensuite, comparer les <strong>résultats de difficulté</strong>"
+            ],
+            "deathMatch": {
+                "title": "MATCH À MORT",
+                "description": "Si c'est encore une égalité réelle, nous passons à un <strong>match à mort</strong>: les deux équipes envoient <strong>un athlète</strong> (ou deux) pour exécuter des routines. La somme de ces routines détermine le gagnant final."
+            }
+        }
+    },
+    "registration": {
+        "heading": "INSCRIPTION & LOGISTIQUE",
+        "description": "Tout ce que vous devez savoir sur l'inscription et la participation aux événements.",
+        "pricing": {
+            "title": "TARIFICATION D'INSCRIPTION",
+            "perGymnast": "Par gymnaste",
+            "perCoach": "Par entraîneur",
+            "note": "Des rabais pour inscription anticipée et une tarification dynamique peuvent s'appliquer selon la demande."
+        },
+        "timeline": {
+            "title": "CALENDRIER D'INSCRIPTION",
+            "description": "Les inscriptions ouvrent <strong>4 mois avant chaque événement</strong>:",
+            "events": [
+                "BR 1: Juillet 2026",
+                "BR 2: Août 2026",
+                "BR 3: Novembre 2026",
+                "BR 4: Janvier 2027"
+            ]
+        },
+        "process": {
+            "title": "PROCESSUS D'INSCRIPTION",
+            "description": "Inscrivez votre équipe via la <strong>plateforme Gym Art Meets</strong> lorsque les inscriptions ouvrent. Vous aurez besoin de:",
+            "items": [
+                "Nom complet pour chaque athlète",
+                "Nom de l'équipe et couleurs/marque de l'équipe",
+                "Frais d'inscription",
+                "Paiement par carte de crédit ou virement bancaire"
+            ]
+        },
+        "warmUps": {
+            "title": "ÉCHAUFFEMENTS",
+            "description": "Les équipes auront des temps d'échauffement programmés avant leurs rondes de compétition. Les horaires d'échauffement détaillés seront fournis plus près de chaque événement. Le format d'une journée signifie des rotations d'échauffement efficaces."
+        },
+        "venueLocations": {
+            "title": "EMPLACEMENTS DES LIEUX",
+            "description": "Tous les événements de la Saison 1 sont en <strong>Ontario et Québec, Canada</strong>.",
+            "note": "Les lieux spécifiques seront annoncés au fur et à mesure de leur confirmation. Nous ciblons des lieux avec une bonne capacité de spectateurs et un équipement de gymnastique professionnel."
+        },
+        "cancellationPolicy": {
+            "title": "POLITIQUE D'ANNULATION",
+            "description": "En cas d'annulation peu probable, des <strong>remboursements complets</strong> seront fournis pour les inscriptions et les achats de billets. Nous avons des plans de lieux de secours et une planification flexible (contrairement aux événements de fédération verrouillés à des dates spécifiques)."
+        }
+    },
+    "prizes": {
+        "heading": "RÉPARTITION DES PRIX",
+        "firstPlace": "1RE PLACE",
+        "secondPlace": "2E PLACE",
+        "thirdPlace": "3E PLACE",
+        "merchandise": "Les équipes terminant 4e–8e reçoivent des marchandises exclusives <strong>Battaille Royale</strong>.",
+        "year1": "Année 1: 4 événements × 25 000 $ = <strong>100 000 $ de prix totaux</strong>",
+        "goal": "Notre objectif: passer à 250 000 $ par compétition"
+    }
+}

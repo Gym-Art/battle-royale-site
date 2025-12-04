@@ -1,0 +1,104 @@
+{
+    "hero": {
+        "presents": "Gym Art Présente",
+        "description": "La première ligue de gymnastique professionnelle. Équipes mixtes. Notation normalisée. 100 000 $ en prix la première année. 4 événements. 4 champions.",
+        "joinWaitlist": "Rejoindre la liste d'attente",
+        "learnFormat": "Découvrir le format",
+        "stats": {
+            "perEvent": "Par événement",
+            "teams": "Équipes",
+            "events": "Événements"
+        }
+    },
+    "forAthletes": {
+        "label": "Pour les athlètes",
+        "heading": "COMPÉTIR COMME UN PRO",
+        "highlights": {
+            "cashPrizes": {
+                "title": "Vrais prix en argent",
+                "description": "25 000 $ par événement. 100 000 $ au total la première année. 1er place: 15 000 $, 2e: 7 500 $, 3e: 2 500 $."
+            },
+            "mixedTeams": {
+                "title": "Équipes mixtes",
+                "description": "Créez votre propre équipe de 3+ gymnastes. Toutes femmes, tous hommes, ou n'importe quel mélange—votre choix."
+            },
+            "figLevel": {
+                "title": "Compétition niveau FIG",
+                "description": "Mêmes routines. Même jugement. Mêmes règles. Juste des scores normalisés pour une comparaison équitable entre agrès."
+            },
+            "fourEvents": {
+                "title": "4 événements par année",
+                "description": "Chaque événement dure un jour: Qualification → Demi-finale → Finale. Plusieurs chances de compétir et gagner."
+            }
+        },
+        "callout": "Invitation ouverte: Tout gymnaste de 16 ans et plus capable d'exécuter des routines de niveau FIG est le bienvenu. Aucune restriction de fédération. Aucun parcours de qualification. Apportez simplement votre équipe et compétissez."
+    },
+    "forSpectators": {
+        "label": "Pour les spectateurs",
+        "heading": "LA GYMNASTIQUE COMME VOUS NE L'AVEZ JAMAIS VUE",
+        "paragraph1": "Oubliez les compétitions de 3 jours avec des horaires de rotation confus. Battaille Royale est un spectacle d'une journée conçu pour un divertissement maximal.",
+        "paragraph2": "Regardez 64 équipes s'affronter lors des rondes de qualification le matin. Revenez pour les demi-finales et finales à enjeux élevés le soir. Chaque routine compte. Chaque score compte.",
+        "paragraph3": "Avec une notation normalisée sur 10, vous comprendrez instantanément qui gagne—aucun diplôme de gymnastique requis.",
+        "morningQualifications": {
+            "period": "AM",
+            "title": "QUALIFICATIONS DU MATIN",
+            "description": "9h00 – 15h00. Quatre rondes. 64 équipes compétissent."
+        },
+        "eveningFinals": {
+            "period": "PM",
+            "title": "FINALES DU SOIR",
+            "description": "18h00 – 20h30. Demi-finales et finales. Top 12 → Top 4 → Champion."
+        },
+        "datesVenues": {
+            "title": "DATES ET LIEUX À DÉTERMINER",
+            "firstEvent": "Premier événement: novembre 2026"
+        }
+    },
+    "forSponsors": {
+        "label": "Pour les commanditaires",
+        "heading": "PARTENAIRE AVEC L'AVENIR",
+        "description": "La gymnastique a atteint 41,5 millions de téléspectateurs à Paris 2024—le sport olympique le plus regardé. Pourtant, il n'y a pas de ligue professionnelle pour capturer ce public toute l'année. Jusqu'à maintenant.",
+        "stats": {
+            "olympicViewers": "Téléspectateurs olympiques",
+            "regionalGymnasts": "Gymnastes régionaux",
+            "reachableAudience": "Public accessible"
+        },
+        "button": "En savoir plus sur le parrainage"
+    },
+    "rulesSummary": {
+        "label": "Le format",
+        "heading": "SIMPLE. ÉQUITABLE. EXCITANT.",
+        "paragraph1": "La notation traditionnelle de la gymnastique est confuse. Différents agrès, différents scores maximum, impossible à comparer. Nous avons corrigé cela.",
+        "paragraph2": "Normalisation des scores: Chaque routine est jugée selon les règles FIG standard, puis normalisée sur un maximum de 10. Cela signifie que vous pouvez directement comparer une routine de poutre à une routine de barre fixe—comparaison directe.",
+        "paragraph3": "Cette percée permet des équipes mixtes WAG/MAG et rend chaque score instantanément compréhensible pour les téléspectateurs occasionnels.",
+        "button": "Lire les règles complètes",
+        "competitionFlow": {
+            "title": "DÉROULEMENT DE LA COMPÉTITION",
+            "qualification": {
+                "title": "QUALIFICATION",
+                "description": "64 équipes → 8 routines chacune → Top 12 avancent"
+            },
+            "semiFinals": {
+                "title": "DEMI-FINALES",
+                "description": "12 équipes → 6 routines chacune → Top 4 avancent"
+            },
+            "finals": {
+                "title": "FINALES",
+                "description": "4 équipes → 4 routines chacune → Un champion"
+            }
+        }
+    },
+    "emailSignup": {
+        "label": "Restez connecté",
+        "heading": "REJOIGNEZ LA LISTE D'ATTENTE",
+        "description": "Soyez le premier à savoir quand les inscriptions s'ouvrent. Obtenez un accès anticipé aux dates, lieux, billets et mises à jour exclusives.",
+        "footer": "Nous respectons votre boîte de réception. Pas de spam, juste des mises à jour importantes de Battaille Royale."
+    },
+    "emailForm": {
+        "placeholder": "Entrez votre courriel",
+        "button": "Rejoindre la liste",
+        "buttonLoading": "Inscription...",
+        "success": "Vous êtes sur la liste.",
+        "error": "Quelque chose s'est mal passé. Réessayez."
+    }
+}

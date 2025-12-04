@@ -1,0 +1,104 @@
+{
+    "hero": {
+        "presents": "Gym Art Presents",
+        "description": "The first professional gymnastics league. Mixed teams. Normalized scoring. $100K in Year 1 prizes. 4 events. 4 champions.",
+        "joinWaitlist": "Join the Waitlist",
+        "learnFormat": "Learn the Format",
+        "stats": {
+            "perEvent": "Per Event",
+            "teams": "Teams",
+            "events": "Events"
+        }
+    },
+    "forAthletes": {
+        "label": "For Athletes",
+        "heading": "COMPETE LIKE A PRO",
+        "highlights": {
+            "cashPrizes": {
+                "title": "Real Cash Prizes",
+                "description": "$25K per event. $100K total in Year 1. 1st place takes $15K, 2nd $7.5K, 3rd $2.5K."
+            },
+            "mixedTeams": {
+                "title": "Mixed Teams",
+                "description": "Build your own team of 3+ gymnasts. All women, all men, or any mix—your choice."
+            },
+            "figLevel": {
+                "title": "FIG-Level Competition",
+                "description": "Same routines. Same judging. Same rules. Just normalized scores for fair cross-apparatus comparison."
+            },
+            "fourEvents": {
+                "title": "4 Events Per Year",
+                "description": "Each event is one day: Qualification → Semi-Final → Final. Multiple chances to compete and win."
+            }
+        },
+        "callout": "Open invitational: Any gymnast 16+ who can perform FIG-level routines is welcome. No federation restrictions. No qualification hoops. Just bring your team and compete."
+    },
+    "forSpectators": {
+        "label": "For Spectators",
+        "heading": "GYMNASTICS LIKE YOU'VE NEVER SEEN",
+        "paragraph1": "Forget 3-day competitions with confusing rotation schedules. Battle Royale is a single-day spectacle designed for maximum entertainment.",
+        "paragraph2": "Watch 64 teams battle through qualification rounds in the morning. Return for the high-stakes semi-finals and finals in the evening. Every routine matters. Every score counts.",
+        "paragraph3": "With normalized scoring out of 10, you'll instantly understand who's winning—no gymnastics degree required.",
+        "morningQualifications": {
+            "period": "AM",
+            "title": "MORNING QUALIFICATIONS",
+            "description": "9:00 AM – 3:00 PM. Four rounds. 64 teams compete."
+        },
+        "eveningFinals": {
+            "period": "PM",
+            "title": "EVENING FINALS",
+            "description": "6:00 PM – 8:30 PM. Semi-finals and finals. Top 12 → Top 4 → Champion."
+        },
+        "datesVenues": {
+            "title": "DATES & VENUES TBD",
+            "firstEvent": "First event: November 2026"
+        }
+    },
+    "forSponsors": {
+        "label": "For Sponsors",
+        "heading": "PARTNER WITH THE FUTURE",
+        "description": "Gymnastics reached 41.5 million viewers at Paris 2024—the most-watched Olympic sport. Yet there's no professional league to capture this audience year-round. Until now.",
+        "stats": {
+            "olympicViewers": "Olympic Viewers",
+            "regionalGymnasts": "Regional Gymnasts",
+            "reachableAudience": "Reachable Audience"
+        },
+        "button": "Learn About Sponsorship"
+    },
+    "rulesSummary": {
+        "label": "The Format",
+        "heading": "SIMPLE. FAIR. EXCITING.",
+        "paragraph1": "Traditional gymnastics scoring is confusing. Different apparatus, different max scores, impossible to compare. We fixed that.",
+        "paragraph2": "Score Normalization: Every routine is judged using standard FIG rules, then normalized to a maximum of 10. This means you can directly compare a beam routine to a high bar routine—apples to apples.",
+        "paragraph3": "This breakthrough allows mixed WAG/MAG teams and makes every score instantly understandable to casual viewers.",
+        "button": "Read Full Rules",
+        "competitionFlow": {
+            "title": "COMPETITION FLOW",
+            "qualification": {
+                "title": "QUALIFICATION",
+                "description": "64 teams → 8 routines each → Top 12 advance"
+            },
+            "semiFinals": {
+                "title": "SEMI-FINALS",
+                "description": "12 teams → 6 routines each → Top 4 advance"
+            },
+            "finals": {
+                "title": "FINALS",
+                "description": "4 teams → 4 routines each → One champion"
+            }
+        }
+    },
+    "emailSignup": {
+        "label": "Stay Connected",
+        "heading": "JOIN THE WAITLIST",
+        "description": "Be the first to know when registration opens. Get early access to dates, venues, tickets, and exclusive updates.",
+        "footer": "We respect your inbox. No spam, just important Battle Royale updates."
+    },
+    "emailForm": {
+        "placeholder": "Enter your email",
+        "button": "Join Waitlist",
+        "buttonLoading": "Joining...",
+        "success": "You're on the list.",
+        "error": "Something went wrong. Try again."
+    }
+}

@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "label": "Opportunités de partenariat",
+    "heading": {
+      "part1": "COMMANDITER",
+      "highlight": "BATAILLE ROYALE"
+    },
+    "description": "Partenaire de la première ligue de gymnastique professionnelle. Atteignez un public passionné et mal desservi avec des opportunités d'engagement toute l'année."
+  },
+  "jumpToSection": {
+    "marketOpportunity": "Opportunité de marché",
+    "partnershipTiers": "Niveaux de partenariat",
+    "whatPartnersGet": "Ce que les partenaires obtiennent",
+    "contact": "Contact"
+  },
+  "marketOpportunity": {
+    "heading": "L'OPPORTUNITÉ DE MARCHÉ",
+    "stats": {
+      "paris2024Viewers": {
+        "value": "41,5M",
+        "label": "Téléspectateurs de gymnastique Paris 2024",
+        "subtext": "Sport olympique le plus regardé"
+      },
+      "existingLeagues": {
+        "value": "0",
+        "label": "Ligues professionnelles existantes",
+        "subtext": "Aucune compétition toute l'année"
+      },
+      "reachableAudience": {
+        "value": "250K+",
+        "label": "Public régional accessible",
+        "subtext": "Parents, athlètes, entraîneurs"
+      }
+    },
+    "gapCallout": {
+      "prefix": "L'écart:",
+      "text": "La gymnastique suscite un intérêt mondial massif mais n'a pas d'écosystème professionnel. Aucun événement répétable. Aucune culture d'équipe. Aucun modèle de revenus évolutif.",
+      "highlight": "Battle Royale comble cet écart",
+      "suffix": "avec un format axé sur les spectateurs conçu pour la croissance."
+    }
+  },
+  "partnershipTiers": {
+    "heading": "NIVEAUX DE PARTENARIAT",
+    "types": {
+      "cashPrize": {
+        "title": "Partenaires de prix en argent",
+        "description": "Soutenez directement les récompenses des athlètes. Votre marque associée à la cagnotte et aux présentations des gagnants.",
+        "highlight": "Cagnotte de 25 000 $"
+      },
+      "merchApparel": {
+        "title": "Partenaires de marchandise et vêtements",
+        "description": "Habillez la compétition. Marquage exclusif sur les produits officiels Battle Royale et les vêtements d'équipe.",
+        "highlight": "Haute visibilité"
+      },
+      "equipmentServices": {
+        "title": "Partenaires d'équipement et services",
+        "description": "Fournissez de l'équipement, de la technologie ou des services. Association à long terme avec l'infrastructure de la ligue.",
+        "highlight": "Présence toute l'année"
+      }
+    }
+  },
+  "whatPartnersGet": {
+    "heading": "CE QUE LES PARTENAIRES REÇOIVENT",
+    "benefits": [
+      "Visibilité le jour de l'événement: placement de logo, annonces, zones de marque",
+      "Présence numérique: site web, médias sociaux, intégration de diffusion en direct",
+      "Accès direct à la communauté de gymnastique via la plateforme Gym Art",
+      "Hospitalité: accès VIP, rencontres avec les athlètes",
+      "Association à long terme avec la première ligue de gymnastique professionnelle",
+      "Options d'exclusivité dans la catégorie de partenariat"
+    ]
+  },
+  "contact": {
+    "heading": {
+      "part1": "PARLONS-",
+      "highlight": "EN"
+    },
+    "description": "Intéressé à devenir partenaire de Battle Royale? Contactez-nous pour discuter de la façon dont nous pouvons créer de la valeur ensemble."
+  }
+}
+

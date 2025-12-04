@@ -1,0 +1,269 @@
+{
+    "hero": {
+        "label": "Competition Format",
+        "heading": "FORMAT & RULES",
+        "description": "Everything you need to know about how Battle Royale works—from team composition to score normalization."
+    },
+    "navigation": {
+        "fundamentals": "Fundamentals",
+        "teamComposition": "Team Composition",
+        "apparatus": "Apparatus",
+        "scoreNormalization": "Score Normalization",
+        "judging": "Judging & Scoring",
+        "competitionFlow": "Competition Flow",
+        "registration": "Registration",
+        "prizes": "Prizes"
+    },
+    "fundamentals": {
+        "heading": "THE FUNDAMENTALS",
+        "cards": {
+            "cashPrizes": {
+                "title": "Cash Prizes",
+                "description": "$25K per event. $100K total in Year 1. 1st: $15K. 2nd: $7.5K. 3rd: $2.5K. Teams 4th–8th get merch prizes."
+            },
+            "mixedTeams": {
+                "title": "Mixed Teams",
+                "description": "64 team spots per event. Minimum 3 gymnasts, no max. Teams can be all women, all men, or any mix."
+            },
+            "invitational": {
+                "title": "Invitational",
+                "description": "Open to all gymnasts 16+ who can perform FIG-level routines. No federation restrictions or qualification requirements."
+            },
+            "fourEvents": {
+                "title": "4 Events Per Year",
+                "description": "Year 1 runs Nov 2026 – Jun 2027. Each event is one day: qualification, semi-final, and final."
+            },
+            "eliminationFormat": {
+                "title": "Elimination Format",
+                "description": "64 teams qualify, 12 advance to semi-finals, 4 make the finals. Progressively fewer routines with higher stakes."
+            },
+            "figJudging": {
+                "title": "FIG Judging",
+                "description": "Same routines. Same judging criteria. Same FIG rules. Just normalized scores for fair cross-apparatus comparison."
+            }
+        }
+    },
+    "teamComposition": {
+        "heading": "TEAM COMPOSITION & ELIGIBILITY",
+        "subheading": "Who can compete and how teams are formed.",
+        "ageRequirements": {
+            "title": "AGE REQUIREMENTS",
+            "description": "Athletes must be at least <strong>16 years old</strong> on the day of the event. There is no upper age limit."
+        },
+        "skillLevel": {
+            "title": "SKILL LEVEL",
+            "description": "Athletes should be capable of performing <strong>FIG Senior-level routines</strong>. This typically means competitive Level 10, Elite, or NCAA-level gymnasts for WAG, and Level 10 or Elite for MAG.",
+            "routineNote": "A FIG routine consists of 6-8 elements from the FIG Code of Points.",
+            "magCop": "MAG Code of Points (2025-2028)",
+            "wagCop": "WAG Code of Points (2025-2028)"
+        },
+        "teamComposition": {
+            "title": "TEAM COMPOSITION",
+            "items": [
+                "<strong>Minimum 3 gymnasts</strong>, no maximum size",
+                "Teams can be all women, all men, or any mix",
+                "Gymnasts from different clubs can form teams together—no club or federation restrictions",
+                "No federation membership required",
+                "Each gymnast may only compete on <strong>one team per event</strong>"
+            ]
+        },
+        "nationalTeamLimit": {
+            "title": "NATIONAL TEAM LIMIT",
+            "description": "To prevent \"super teams\" in the early seasons, each team may only include <strong>one current national team member</strong>. This ensures competitive balance and gives all teams a fair chance."
+        },
+        "apparelRequirements": {
+            "title": "APPAREL REQUIREMENTS",
+            "description": "<strong>No singlet requirement.</strong> Teams must have <strong>2 main team colors</strong> and wear matching, non-baggy attire. Express your team's identity however you want—this is about entertainment and team spirit."
+        }
+    },
+    "apparatus": {
+        "heading": "APPARATUS",
+        "description": "The events that make up Battle Royale competition.",
+        "wag": {
+            "title": "WAG (4 EVENTS)",
+            "apparatus": {
+                "vault": "Vault",
+                "unevenBars": "Uneven Bars",
+                "balanceBeam": "Balance Beam",
+                "floorExercise": "Floor Exercise"
+            }
+        },
+        "mag": {
+            "title": "MAG (4 EVENTS)",
+            "apparatus": {
+                "vault": "Vault",
+                "floorExercise": "Floor Exercise",
+                "stillRings": "Still Rings",
+                "highBar": "High Bar"
+            }
+        },
+        "mixedTeams": "Mixed teams can use any combination of these <strong>8 apparatus</strong>.",
+        "whyNoPommel": {
+            "title": "WHY NO POMMEL HORSE OR PARALLEL BARS?",
+            "description": "We've streamlined the men's apparatus to 4 events to match women's gymnastics. <strong>Pommel Horse</strong> was removed because it's often the trickiest event for gymnasts and prone to falls. <strong>Parallel Bars</strong> was removed because routines take the longest—and we're focused on an action-packed spectator experience.",
+            "kept": "We kept <strong>Still Rings</strong> (iconic strength event), <strong>High Bar</strong> (spectacular releases and dismounts), plus Vault and Floor (shared with women's)."
+        }
+    },
+    "scoreNormalization": {
+        "heading": "SCORE NORMALIZATION",
+        "description": "The breakthrough that makes Battle Royale possible.",
+        "problem": {
+            "title": "THE PROBLEM",
+            "description": "In traditional FIG gymnastics, different apparatus have different maximum scores based on the difficulty of skills available. A 15.5 on vault means something different than a 15.5 on beam. This makes it impossible to:",
+            "items": [
+                "Compare routines across different apparatus",
+                "Compare WAG (women's) and MAG (men's) scores directly",
+                "Create mixed-gender teams that compete fairly",
+                "Help casual viewers understand who's winning"
+            ]
+        },
+        "solution": {
+            "title": "THE SOLUTION",
+            "description": "<strong>Score Normalization:</strong> We take the standard FIG score and scale it based on the highest possible start value for that apparatus. The result is a final score out of 10.",
+            "example": "This means a <strong>9.2 on beam</strong> can be directly compared to a <strong>9.2 on high bar</strong>. Spectators instantly understand the quality of each routine. Mixed WAG/MAG teams become possible and fair."
+        },
+        "whatStaysSame": {
+            "title": "WHAT STAYS THE SAME",
+            "items": [
+                "Athletes perform their existing FIG routines—no changes required",
+                "Judges use standard FIG Code of Points",
+                "Difficulty (D) scores and Execution (E) scores work the same way",
+                "Deductions for falls, errors, and execution remain unchanged"
+            ]
+        }
+    },
+    "judging": {
+        "heading": "JUDGING & SCORING",
+        "description": "How routines are evaluated and scores are calculated.",
+        "structure": {
+            "title": "JUDGING STRUCTURE",
+            "description": "In the qualification round, we use <strong>two panels per event</strong>, with each panel consisting of <strong>one judge</strong> who evaluates both Difficulty and Execution for maximum speed.",
+            "system": "The system works like this: One gymnast competes, and the moment they finish, the first panel starts judging them. While the first panel is judging, the next gymnast competes while the second panel judges them. When they finish, the panels swap. This means there's always someone competing at all times—we must respect strict time restraints.",
+            "judges": "We only select the best of the best judges: those who are fast, accurate, and unbiased. This streamlined approach ensures constant action while maintaining the highest judging standards."
+        },
+        "codeOfPoints": {
+            "title": "CODE OF POINTS",
+            "description": "Judges use the <strong>FIG Code of Points</strong> (current cycle). Judges use the same deductions, difficulty values, and execution standards they're already trained on.",
+            "normalization": "Score normalization doesn't affect judging at all. Judges judge routines normally using FIG standards. The normalization calculation happens after scores are submitted—it's a mathematical transformation applied to make scores comparable across apparatus."
+        },
+        "scoreSubmission": {
+            "title": "SCORE SUBMISSION",
+            "description": "Judges submit scores using the <strong>Judges Companion app</strong>, a helper app built into Gym Art Meets. This is our in-house application designed for maximum speed and super easy use.",
+            "process": "You simply input an FIG score, and the score normalization happens automatically in the background. On the scoreboard, spectators see the normalized score out of 10—all done seamlessly without changing your judging process."
+        }
+    },
+    "competitionFlow": {
+        "heading": "COMPETITION FLOW",
+        "qualification": {
+            "title": "QUALIFICATION",
+            "time": "9:00 AM – 3:00 PM",
+            "items": [
+                "Four qualification rounds, each lasting 80 minutes",
+                "Each team performs <strong>8 routines</strong>",
+                "All scores count towards team total",
+                "Maximum 2 routines per apparatus",
+                "<strong>Top 12 teams advance</strong> to semi-finals"
+            ]
+        },
+        "semiFinals": {
+            "title": "SEMI-FINALS",
+            "time": "6:00 PM – 7:30 PM",
+            "items": [
+                "12 teams compete",
+                "Each team performs <strong>6 routines</strong>",
+                "All scores count",
+                "Maximum 2 routines per apparatus, 1 vault",
+                "120-second time limit per routine (no extra time for falls)",
+                "<strong>Top 4 teams advance</strong> to finals"
+            ]
+        },
+        "finals": {
+            "title": "FINALS",
+            "time": "8:00 PM – 8:30 PM",
+            "items": [
+                "4 teams gather in the center of the arena",
+                "Each team performs <strong>4 routines</strong>",
+                "All scores count",
+                "One athlete competes at a time, rotating between teams",
+                "Maximum 2 routines per apparatus",
+                "<strong>Highest total score wins $15,000</strong>"
+            ]
+        },
+        "appointmentScheduling": {
+            "title": "APPOINTMENT-BASED SCHEDULING",
+            "description": "Unlike traditional competitions where teams rotate through apparatus together, Battle Royale uses <strong>appointment-based scheduling</strong>.",
+            "example": "Each athlete receives a specific time for their routine. For example: \"Athlete A - Uneven Bars at 9:05 AM, Athlete B - Vault at 9:10 AM.\" Multiple athletes can compete simultaneously on different apparatus.",
+            "benefit": "This creates a more dynamic, action-packed viewing experience with constant activity across the competition floor. Detailed schedules are released close to each event."
+        },
+        "timeLimits": {
+            "title": "TIME LIMITS & FALLS",
+            "qualification": "<strong>Qualification:</strong> Standard FIG time limits apply.",
+            "semiFinalsFinals": "<strong>Semi-Finals & Finals:</strong> There's a <strong>120-second hard limit</strong> per routine with no extensions.",
+            "falls": "Falls are deducted per standard FIG rules. Skills performed after the time limit don't count."
+        },
+        "tieBreaking": {
+            "title": "TIE-BREAKING RULES",
+            "description": "We follow <strong>FIG regulations</strong> for breaking ties:",
+            "items": [
+                "First, compare <strong>execution scores</strong>",
+                "Then, compare <strong>difficulty scores</strong>"
+            ],
+            "deathMatch": {
+                "title": "DEATH MATCH",
+                "description": "If it's still a true tie, we go to a <strong>death match</strong>: both teams send up <strong>one athlete</strong> (or two) to perform routines. The sum of those routines determines the final winner."
+            }
+        }
+    },
+    "registration": {
+        "heading": "REGISTRATION & LOGISTICS",
+        "description": "Everything you need to know about registering and attending events.",
+        "pricing": {
+            "title": "REGISTRATION PRICING",
+            "perGymnast": "Per Gymnast",
+            "perCoach": "Per Coach",
+            "note": "Early bird discounts and dynamic pricing may apply based on demand."
+        },
+        "timeline": {
+            "title": "REGISTRATION TIMELINE",
+            "description": "Registration opens <strong>4 months before each event</strong>:",
+            "events": [
+                "BR 1: July 2026",
+                "BR 2: August 2026",
+                "BR 3: November 2026",
+                "BR 4: January 2027"
+            ]
+        },
+        "process": {
+            "title": "REGISTRATION PROCESS",
+            "description": "Register your team through the <strong>Gym Art Meets platform</strong> when registration opens. You'll need:",
+            "items": [
+                "Full name for each athlete",
+                "Team name and team colors/brand",
+                "Registration fees",
+                "Payment via credit card or bank transfer"
+            ]
+        },
+        "warmUps": {
+            "title": "WARM-UPS",
+            "description": "Teams will have scheduled warm-up times before their competition rounds. Detailed warm-up schedules will be provided closer to each event. The single-day format means efficient warm-up rotations."
+        },
+        "venueLocations": {
+            "title": "VENUE LOCATIONS",
+            "description": "All Season 1 events are in <strong>Ontario and Quebec, Canada</strong>.",
+            "note": "Specific venues will be announced as they're confirmed. We're targeting venues with good spectator capacity and professional gymnastics equipment."
+        },
+        "cancellationPolicy": {
+            "title": "CANCELLATION POLICY",
+            "description": "In the unlikely event of cancellation, <strong>full refunds</strong> will be provided for registration and ticket purchases. We have backup venue plans and flexible scheduling (unlike federation events locked to specific dates)."
+        }
+    },
+    "prizes": {
+        "heading": "PRIZE BREAKDOWN",
+        "firstPlace": "1ST PLACE",
+        "secondPlace": "2ND PLACE",
+        "thirdPlace": "3RD PLACE",
+        "merchandise": "Teams finishing 4th–8th receive exclusive <strong>Battle Royale</strong> merchandise.",
+        "year1": "Year 1: 4 events × $25K = <strong>$100K total prizes</strong>",
+        "goal": "Our goal: scale to $250K per competition"
+    }
+}

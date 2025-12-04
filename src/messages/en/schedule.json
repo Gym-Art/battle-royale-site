@@ -1,0 +1,106 @@
+{
+    "hero": {
+        "label": "Season One",
+        "heading": {
+            "part1": "THE",
+            "highlight": "SCHEDULE"
+        },
+        "description": "4 events. $100K in total prizes. Your path to glory starts here."
+    },
+    "proofOfConcept": {
+        "badge": "COMING FIRST",
+        "heading": "PROOF OF CONCEPT",
+        "date": "June 21, 2026",
+        "description": "The inaugural showcase event. Limited capacity. First look at what Battle Royale can be."
+    },
+    "seasonEvents": {
+        "heading": {
+            "part1": "SEASON",
+            "highlight": "EVENTS"
+        },
+        "eventCard": {
+            "registrationOpens": "Registration Opens",
+            "spectatorTicketsOpen": "Spectator Tickets Open",
+            "competitionDay": "COMPETITION DAY",
+            "location": "📍 Ontario/Quebec, Canada"
+        }
+    },
+    "howItWorks": {
+        "heading": {
+            "part1": "HOW IT",
+            "highlight": "WORKS"
+        },
+        "registration": {
+            "title": "HOW TO REGISTER",
+            "pricing": {
+                "title": "PRICING",
+                "perGymnast": "Per Gymnast",
+                "perCoach": "Per Coach"
+            },
+            "keyInfo": {
+                "title": "KEY INFO",
+                "items": {
+                    "teamSpots": {
+                        "bold": "64 team spots",
+                        "text": " per event"
+                    },
+                    "registerPlatform": {
+                        "bold": "Register on",
+                        "text": " Gym Art Meets platform"
+                    }
+                }
+            },
+            "teamRequirements": {
+                "title": "TEAM REQUIREMENTS",
+                "items": {
+                    "minimumGymnasts": {
+                        "bold": "Minimum 3 gymnasts",
+                        "text": ", no maximum"
+                    },
+                    "mixedGender": "Mixed gender teams allowed",
+                    "anyClub": "Any club combination (no restrictions)",
+                    "teamColors": {
+                        "bold": "2 main team colors",
+                        "text": " required"
+                    }
+                }
+            },
+            "apparel": {
+                "title": "APPAREL",
+                "highlight": "No singlet requirement.",
+                "description": " Matching colors, not baggy. Express your team's identity however you want."
+            }
+        },
+        "tickets": {
+            "title": "SPECTATOR TICKETS",
+            "generalAdmission": {
+                "label": "General Admission",
+                "price": "$30",
+                "description": "Standard seating"
+            },
+            "courtside": {
+                "label": "COURTSIDE",
+                "price": "$150",
+                "description": "Front-row premium seating"
+            },
+            "additionalInfo": {
+                "items": {
+                    "availablePrior": "Tickets available prior to each event",
+                    "videosPublished": {
+                        "text": "Event videos published on",
+                        "bold": "Gym Art app"
+                    }
+                }
+            }
+        }
+    },
+    "futureVision": {
+        "label": "Looking Ahead",
+        "heading": {
+            "part1": "THIS IS JUST THE",
+            "highlight": "BEGINNING"
+        },
+        "description1": "Year 1 is the foundation. Our goal is to scale Battle Royale to $250,000 per competition.",
+        "description2": "More events. Bigger prizes. Global reach. Follow us to watch it grow."
+    }
+}

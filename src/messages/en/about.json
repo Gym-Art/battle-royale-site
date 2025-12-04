@@ -1,0 +1,98 @@
+{
+    "hero": {
+        "label": "About Battle Royale",
+        "heading": {
+            "part1": "OUR",
+            "highlight": "STORY"
+        },
+        "description": "Building the professional gymnastics league that should have existed decades ago."
+    },
+    "vision": {
+        "heading": {
+            "part1": "THE",
+            "highlight": "VISION"
+        },
+        "paragraphs": {
+            "p1": {
+                "text": "Gymnastics is one of the most-watched sports during the Olympics. Paris 2024 drew",
+                "highlight": "41.5 million viewers",
+                "suffix": "for women's qualification alone—making it the most-watched Olympic event. Yet outside of the Games, there's nothing."
+            },
+            "p2": "No professional league. No year-round competition. No team culture. No athlete income pipeline. No way for the millions of gymnastics fans to engage with the sport they love.",
+            "p3": {
+                "highlight": "Battle Royale changes that."
+            },
+            "p4": {
+                "text": "We're building a professional, repeatable competition series designed for spectators first.",
+                "highlight": "Mixed teams. Normalized scoring. Real cash prizes.",
+                "suffix": "A format that casual viewers can follow and hardcore fans can obsess over."
+            }
+        },
+        "year1Callout": {
+            "title": "Year 1: 4 events. $100K in prizes.",
+            "description": {
+                "text": "Starting November 2026 in Ontario/Quebec, Canada. Our goal is to scale to",
+                "highlight": "$250,000 per competition"
+            }
+        }
+    },
+    "whyNow": {
+        "heading": {
+            "part1": "WHY",
+            "highlight": "NOW"
+        },
+        "cards": {
+            "massiveDemand": {
+                "title": "Massive Demand",
+                "description": "41.5M Olympic viewers prove the audience exists. Social media has created thousands of visible elite athletes with existing followings."
+            },
+            "noSupply": {
+                "title": "No Supply",
+                "description": "There's no professional league despite massive demand. Consumers are trained to watch niche sports (UFC, CrossFit, Ninja Warrior)."
+            },
+            "weHaveDistribution": {
+                "title": "We Have Distribution",
+                "description": "Gym Art Meets software reaches tens of thousands of gymnasts, parents, and coaches. We own the entire competition stack."
+            },
+            "provenTechnology": {
+                "title": "Proven Technology",
+                "description": "Our platform is stress-tested across International Gymnix and all major Canadian competitions. We can iterate faster than anyone."
+            }
+        }
+    },
+    "gymArt": {
+        "heading": {
+            "part1": "POWERED BY",
+            "highlight": "GYM ART"
+        },
+        "description": {
+            "text": "Battle Royale is produced by",
+            "company": "Gym Art Inc.",
+            "suffix": "the company behind Gym Art Meets—an end-to-end platform for gymnastics competition management including registration, scheduling, scoring, and media."
+        },
+        "unfairAdvantage": {
+            "title": "OUR UNFAIR ADVANTAGE",
+            "items": [
+                {
+                    "bold": "Direct distribution",
+                    "text": "to the gymnastics market through existing platform"
+                },
+                {
+                    "bold": "Proprietary technology",
+                    "text": "that we can modify without third-party dependencies"
+                },
+                {
+                    "bold": "Deep industry network",
+                    "text": "with federations, clubs, and elite athletes"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "heading": {
+            "part1": "GET IN",
+            "highlight": "TOUCH"
+        },
+        "description": "Questions about Battle Royale? Want to partner with us? We'd love to hear from you."
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "hero": {
+        "label": "À propos de Battle Royale",
+        "heading": {
+            "part1": "NOTRE",
+            "highlight": "HISTOIRE"
+        },
+        "description": "Construire la ligue de gymnastique professionnelle qui aurait dû exister il y a des décennies."
+    },
+    "vision": {
+        "heading": {
+            "part1": "LA",
+            "highlight": "VISION"
+        },
+        "paragraphs": {
+            "p1": {
+                "text": "La gymnastique est l'un des sports les plus regardés pendant les Jeux olympiques. Paris 2024 a attiré",
+                "highlight": "41,5 millions de téléspectateurs",
+                "suffix": "pour la seule qualification féminine—en faisant l'événement olympique le plus regardé. Pourtant, en dehors des Jeux, il n'y a rien."
+            },
+            "p2": "Aucune ligue professionnelle. Aucune compétition toute l'année. Aucune culture d'équipe. Aucun pipeline de revenus pour les athlètes. Aucun moyen pour les millions de fans de gymnastique de s'engager avec le sport qu'ils aiment.",
+            "p3": {
+                "highlight": "Battle Royale change cela."
+            },
+            "p4": {
+                "text": "Nous construisons une série de compétitions professionnelles et répétables conçue d'abord pour les spectateurs.",
+                "highlight": "Équipes mixtes. Notation normalisée. Vrais prix en argent.",
+                "suffix": "Un format que les téléspectateurs occasionnels peuvent suivre et que les fans inconditionnels peuvent adorer."
+            }
+        },
+        "year1Callout": {
+            "title": "Année 1: 4 événements. 100 000 $ en prix.",
+            "description": {
+                "text": "À partir de novembre 2026 en Ontario/Québec, Canada. Notre objectif est d'atteindre",
+                "highlight": "250 000 $ par compétition"
+            }
+        }
+    },
+    "whyNow": {
+        "heading": {
+            "part1": "POURQUOI",
+            "highlight": "MAINTENANT"
+        },
+        "cards": {
+            "massiveDemand": {
+                "title": "Demande massive",
+                "description": "41,5 millions de téléspectateurs olympiques prouvent que le public existe. Les médias sociaux ont créé des milliers d'athlètes d'élite visibles avec des suivis existants."
+            },
+            "noSupply": {
+                "title": "Aucune offre",
+                "description": "Il n'y a pas de ligue professionnelle malgré une demande massive. Les consommateurs sont formés pour regarder des sports de niche (UFC, CrossFit, Ninja Warrior)."
+            },
+            "weHaveDistribution": {
+                "title": "Nous avons la distribution",
+                "description": "Le logiciel Gym Art Meets atteint des dizaines de milliers de gymnastes, parents et entraîneurs. Nous possédons toute la pile de compétition."
+            },
+            "provenTechnology": {
+                "title": "Technologie éprouvée",
+                "description": "Notre plateforme est testée sous stress à travers International Gymnix et toutes les grandes compétitions canadiennes. Nous pouvons itérer plus rapidement que quiconque."
+            }
+        }
+    },
+    "gymArt": {
+        "heading": {
+            "part1": "ALIMENTÉ PAR",
+            "highlight": "GYM ART"
+        },
+        "description": {
+            "text": "Battle Royale est produit par",
+            "company": "Gym Art Inc.",
+            "suffix": "la société derrière Gym Art Meets—une plateforme de bout en bout pour la gestion des compétitions de gymnastique, y compris l'inscription, la planification, la notation et les médias."
+        },
+        "unfairAdvantage": {
+            "title": "NOTRE AVANTAGE INJUSTE",
+            "items": [
+                {
+                    "bold": "Distribution directe",
+                    "text": "au marché de la gymnastique via la plateforme existante"
+                },
+                {
+                    "bold": "Technologie propriétaire",
+                    "text": "que nous pouvons modifier sans dépendances tierces"
+                },
+                {
+                    "bold": "Réseau industriel profond",
+                    "text": "avec les fédérations, clubs et athlètes d'élite"
+                }
+            ]
+        }
+    },
+    "contact": {
+        "heading": {
+            "part1": "ENTRER EN",
+            "highlight": "CONTACT"
+        },
+        "description": "Des questions sur Battle Royale? Vous voulez devenir partenaire? Nous aimerions avoir de vos nouvelles."
+    }
+}
