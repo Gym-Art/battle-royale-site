@@ -16,17 +16,17 @@ export async function loadPageMessages(locale: string, page: string) {
     if (locale === 'en') {
       switch (page) {
         case 'home':
-          return (await import('../messages/en/home.json')).default;
+          return (await import('@/messages/en/home.json')).default;
         case 'rules':
-          return (await import('../messages/en/rules.json')).default;
+          return (await import('@/messages/en/rules.json')).default;
         case 'schedule':
-          return (await import('../messages/en/schedule.json')).default;
+          return (await import('@/messages/en/schedule.json')).default;
         case 'sponsors':
-          return (await import('../messages/en/sponsors.json')).default;
+          return (await import('@/messages/en/sponsors.json')).default;
         case 'faq':
-          return (await import('../messages/en/faq.json')).default;
+          return (await import('@/messages/en/faq.json')).default;
         case 'about':
-          return (await import('../messages/en/about.json')).default;
+          return (await import('@/messages/en/about.json')).default;
         default:
           console.warn(`Page translations not found for ${locale}/${page}.json`);
           return {};
@@ -34,17 +34,17 @@ export async function loadPageMessages(locale: string, page: string) {
     } else if (locale === 'fr') {
       switch (page) {
         case 'home':
-          return (await import('../messages/fr/home.json')).default;
+          return (await import('@/messages/fr/home.json')).default;
         case 'rules':
-          return (await import('../messages/fr/rules.json')).default;
+          return (await import('@/messages/fr/rules.json')).default;
         case 'schedule':
-          return (await import('../messages/fr/schedule.json')).default;
+          return (await import('@/messages/fr/schedule.json')).default;
         case 'sponsors':
-          return (await import('../messages/fr/sponsors.json')).default;
+          return (await import('@/messages/fr/sponsors.json')).default;
         case 'faq':
-          return (await import('../messages/fr/faq.json')).default;
+          return (await import('@/messages/fr/faq.json')).default;
         case 'about':
-          return (await import('../messages/fr/about.json')).default;
+          return (await import('@/messages/fr/about.json')).default;
         default:
           console.warn(`Page translations not found for ${locale}/${page}.json`);
           return {};

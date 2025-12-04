@@ -14,13 +14,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
   let commonMessages;
   switch (locale) {
     case 'en':
-      commonMessages = (await import('../messages/en/common.json')).default;
+      commonMessages = (await import('@/messages/en/common.json')).default;
       break;
     case 'fr':
-      commonMessages = (await import('../messages/fr/common.json')).default;
+      commonMessages = (await import('@/messages/fr/common.json')).default;
       break;
     default:
-      commonMessages = (await import('../messages/en/common.json')).default;
+      commonMessages = (await import('@/messages/en/common.json')).default;
   }
 
   return {
